@@ -36,4 +36,5 @@ index.html: File utama HTML (jangan diubah-ubah isinya kecuali nambah link font/
 
 # Note
 *didalam project ini masih menampilkan 1 halaman saja yaitu halaman utama, silahkan buat untuk halaman lainnya.*
+
 Jika layar blank, coba cek Terminal atau Console di browser (Klik Kanan > Inspect > Console), disitu bakal di kasih tau errornya ada dimana, dan kenapa.
