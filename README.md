@@ -16,7 +16,7 @@ jika muncul angka/versi maka sudah terinstall, jika belum silahkan instal terleb
     ```bash
     cd web-react
     ```
-3. **WAJIB** install dependencies dengan (pada repo ini node_modules tidak ada dikarenakan ukuran file terlalu besar)
+3. **WAJIB** install dependencies (pada repo ini node_modules tidak ada dikarenakan ukuran file terlalu besar)
    ```bash
    npm install
    ```
