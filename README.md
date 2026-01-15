@@ -29,7 +29,9 @@ jika muncul angka/versi maka sudah terinstall, jika belum silahkan instal terleb
 
 # Struktur Folder
 src/: Tempat kita ngoding (App.jsx, App.css, Components).
+
 public/assets/: Tempat menyimpan gambar (Logo, Foto artikel, dll).
+
 index.html: File utama HTML (jangan diubah-ubah isinya kecuali nambah link font/icon).
 
 # Note
