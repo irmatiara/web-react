@@ -10,7 +10,7 @@ jika muncul angka/versi maka sudah terinstall, jika belum silahkan instal terleb
 
 1. clone repo ini, buka terminal dan jalankan code ini
    ```bash
-    git clone [https://github.com/irmatiara/web-react.git](https://github.com/irmatiara/web-react.git)
+    git clone https://github.com/irmatiara/web-react.git
    ```
 2. setelah itu masuk ke directory project
     ```bash
