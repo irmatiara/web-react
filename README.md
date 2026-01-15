@@ -6,7 +6,7 @@ cara ceknya, buka terminal dan ketik:
 node -v
 ```
 jika muncul angka/versi maka sudah terinstall, jika belum silahkan instal terlebih dahulu melalui link dibawah ini
-nodejs.org
+[nodejs.org](https://nodejs.org/)
 
 1. clone repo ini, buka terminal dan jalankan code ini
    ```bash
