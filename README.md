@@ -1,16 +1,36 @@
-# React + Vite
+# Prasyarat (Wajib Dijalankan)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+sebelum menjalankan project ini, pastikan **Node.js** sudah terinstall di laptop.
+cara ceknya, buka terminal dan ketik:
+```bash
+node -v
+```
+jika muncul angka/versi maka sudah terinstall, jika belum silahkan instal terlebih dahulu melalui link dibawah ini
+nodejs.org
 
-Currently, two official plugins are available:
+1. clone repo ini, buka terminal dan jalankan code ini
+   ```bash
+    git clone [https://github.com/irmatiara/web-react.git](https://github.com/irmatiara/web-react.git)
+   ```
+2. setelah itu masuk ke directory project
+    ```bash
+    cd web-react
+    ```
+3. **WAJIB** install dependencies dengan (pada repo ini node_modules tidak ada dikarenakan ukuran file terlalu besar)
+   ```bash
+   npm install
+   ```
+4. jalankan server
+   ```bash
+   npm run dev
+   ```
+   lalu buka project melalui link hasil dari npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+# Struktur Folder
+src/: Tempat kita ngoding (App.jsx, App.css, Components).
+public/assets/: Tempat menyimpan gambar (Logo, Foto artikel, dll).
+index.html: File utama HTML (jangan diubah-ubah isinya kecuali nambah link font/icon).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Note
+Jika layar blank, coba cek Terminal atau Console di browser (Klik Kanan > Inspect > Console), disitu bakal di kasih tau errornya ada dimana, dan kenapa.
