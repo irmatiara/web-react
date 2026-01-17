@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkLyttleStars</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* === Responsif === */
+        @media (max-width: 900px) {
+            .card {
+                flex: 1 1 calc(50% - 1.5rem);
+                max-width: calc(50% - 1.5rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .burger-menu {
+                display: block;
+                cursor: pointer;
+            }
+            .burger-menu .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: #F3D58D;
+            }
+            .burger-menu.toggle .bar:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            .burger-menu.toggle .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .burger-menu.toggle .bar:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 60px;
+                left: -100%;
+                background-color: #2E4365;
+                width: 100%;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .nav-links.active {
+                left: 0;
+            }
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links a {
+                display: block;
+                width: 90%;
+                margin: auto;
+            }
+
+            .hero {
+                flex-direction: column;
+                height: auto;
+                padding: 4rem 1.5rem 3rem 1.5rem;
+                text-align: center;
+            }
+            .hero img {
+                width: 70%;
+                max-width: 250px;
+                margin-bottom: 1.5rem;
+                order: -1;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+            #tentang {
+                flex-direction: column;
+                padding: 2rem 1.5rem !important;
+                text-align: center;
+            }
+            #tentang img {
+                order: -1 !important;
+                margin-left: 0 !important; 
+                margin-bottom: 1.5rem;
+                width: 70%;
+                max-width: 250px;
+            }
+            .section-tentang {
+                padding: 0 !important;
+            }
+
+            #tentang2 {
+                padding: 2rem 1.5rem !important;
+            }
+            
+            #tentang2 > table > tbody > tr {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #tentang2 > table > tbody > tr > td {
+                width: 100% !important;
+                display: block;
+                text-align: center;
+            }
+
+            #tentang2 img {
+                width: 80% !important;
+                max-width: 300px;
+                height: auto;
+                margin-top: 2.5rem !important;
+            }
+            
+            #tentang2 table table {
+                margin-left: 0 !important;
+                width: 100% !important;
+                border-spacing: 0 1rem;
+            }
+
+            #tentang2 table table tr {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+                text-align: left;
+            }
+            
+            #tentang2 table table td {
+                padding: 0;
+                margin: 0;
+                width: auto !important;
+            }
+            
+            #tentang2 table table td:first-child {
+                width: 50px !important;
+                flex-shrink: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img class="logo" src="assets/logo.svg" alt="" srcset="">
+
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#artikel">Artikel</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="index.html#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="tentang" class="light-bg">
+        <div class="section-tentang">
+            <h2>Tentang ThinkLyttleStars</h2>
+            <p>
+                Nama <i>ThinkLyttelStars</i> berasal dari kata <i>think</i> (berpikir) dan <i>little stars</i>
+                (bintang-bintang kecil).
+                Karena kami percaya bahwa setiap pemikiran kecil bisa tumbuh menjadi cahaya besar yang menerangi dunia.
+                Tempat dimana setiap bintang kecil belajar untuk bersinar lebih terang.
+                Disini, setiap ide kecil dihargai, setiap langkah belajar dirayakan, dan setiap bintang seperti kamu
+                dipandu
+                untuk menemukan cahaya terbaik &#x1F31F;.
+                Jadi, mari berjalan bersama kami. Temukan cahaya kecilmu. Belajarlah perlahan, dengan hati yang terbuka,
+                dan
+                biarkan dirimu bersinar di langit yang luas pengetahuan bersama kami di <b>ThinkLyttelStars</b>
+                &#x1F319;
+                &#x1FA90;.
+            </p>
+        </div>
+        <img src="assets/2.png" alt="" srcset="">
+    </div>
+    <div id="tentang2" style="padding: 60px 80px; background-color: #fdfaf6;">
+        <table style="width: 100%; border-collapse: collapse; margin-left: 40px;">
+            <tr>
+                <td style="vertical-align: top; width: 60%;">
+                    <h2 style="font-size: 32px; margin-bottom: 30px;">Mengapa harus ThinkLyttelStars?</h2>
+                    <table style="width: 100%; border-spacing: 0 18px;">
+                        <tr>
+                            <td style="width: 60px; text-align: center;">
+                                <div
+                                    style="background-color: #F3D58D; color: #2f4a7d; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-house" style="font-size: 22px;"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <p style="margin: 0;"><b>Ruang Belajar Menenangkan</b></p>
+                                <p style="margin: 0;">ThinkLyttelStars adalah tempat di mana setiap “bintang kecil” bisa berhenti sejenak, berpikir, dan belajar.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                <div
+                                    style="background-color: #F3D58D; color: #2f4a7d; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-laptop-code" style="font-size: 22px;"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <p style="margin: 0;"><b>Edukasi Teknologi Sederhana & Menyenangkan</b></p>
+                                <p style="margin: 0;">Membantu siapa pun memahami dunia digital dengan cara yang mudah dipahami.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                <div
+                                    style="background-color: #F3D58D; color: #2f4a7d; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-regular fa-lightbulb" style="font-size: 22px;"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <p style="margin: 0;"><b>Menghargai Potensi Unik</b></p>
+                                <p style="margin: 0;">Setiap ide dan langkah belajar dihargai, menumbuhkan kreativitas, empati, dan kepekaan.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                <div
+                                    style="background-color: #F3D58D; color: #2f4a7d; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-person-rays" style="font-size: 22px;"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <p style="margin: 0;"><b>Bersinar Bersama</b></p>
+                                <p style="margin: 0;">Mari belajar perlahan, temukan cahaya kecilmu, dan bersinar di langit pengetahuan bersama ThinkLyttelStars.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <img src="assets/3.png" alt="" width="500" style="margin-top: 50px;">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="tentang" class="light-bg">
+        <div class="section-tentang">
+            <p>Di dunia yang berjalan begitu cepat, <i>ThinkLyttelStars</i> hadir sebagai ruang kecil yang menenangkan
+                tempat dimana setiap bintang kecil bisa berhenti sejenak, berpikir, belajar, dan menemukan cahanya
+                sendiri.
+                ThinkLyttleStars adalah platform edukasi teknologi yang dibuat untuk membantu siapa pun memahami dunia
+                digital dengan cara yang sederhana dan menyenangkan.
+                Kami percaya bahwa setiap orang memiliki kulai unik yang menunggu untuk ditemukan, dan belajar adalah
+                cara
+                terbaik untuk membuat cahaya itu bersinar lebih terang &#x1F4AB;.
+                ThinkLyttelStars bukan sekedar platform edukasi, tapi sebuah perjaanan lembut menuju penemuan diri.
+                Kami menggabungkan pembelajaran dengan kepekaan, kreativitas, dan empati, agar setiap proses belajar
+                tera
+                hangat bukan menekan, tapi menumbuhkan.
+                Karena kami tahu, ilmu yang tumbuh dari hari akan selalu bertahan lebih lama daripada sekedar hafalan.
+            </p>
+        </div>
+        <img src="assets/4.png" alt="" srcset="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 ThinkLyttleStars.</p>
+    </footer>
+
+    <script>
+        // script untuk hamburger menu
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burgerMenu.classList.toggle('toggle');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThinkLyttleStars</title>
+  <style>
+    /* RESET & DASAR */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+      --primary: #2563eb;
+      --bg: #f3f4f6;
+      --card: #ffffff;
+      --text: #2E4365;
+      --muted: #6b7280;
+      --accent: #f6e5bb;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .btnKembali {
+        display: inline-block;
+        max-width: 200px; /* maksimal lebar */
+        width: auto; /* agar lebar sesuai isi */
+        background-color: #F3D58D;
+        color: #2E4365;
+        border: none;
+        padding: 0.7rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+        margin-top: 1rem;
+    }
+
+
+    .btnKembali:hover {
+        background-color: #2E4365;
+        color: #F3D58D;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: var(--text);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      width: 100%;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+      min-height: 64px;
+      padding: 0.5rem 0;
+      flex-wrap: wrap;
+      /* biar bisa turun ke bawah saat layar kecil */
+      gap: 10px;
+    }
+
+    .logo {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* JUDUL NAVBAR */
+    .nav-title {
+      color: #f6e5bb;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    /* MENU NAVIGATION */
+    .nav-links {
+      display: flex;
+      gap: 0.8rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      padding: 0.4rem 1rem;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      color: var(--accent);
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      background: hsl(42, 81%, 75%);
+      color: var(--text);
+    }
+
+    /* RESPONSIVE FIX */
+    @media (max-width: 900px) {
+      .navbar-container {
+        flex-direction: column;
+        /* logo, judul, dan menu jadi vertikal */
+        align-items: center;
+        gap: 6px;
+      }
+
+      .nav-title {
+        color: #f6e5bb;
+        font-size: 28px;
+        /* besar di laptop/desktop */
+        font-weight: 700;
+        text-align: center;
+        flex: 1;
+        letter-spacing: 1px;
+      }
+
+      @media (max-width: 900px) {
+        .nav-title {
+          font-size: 20px;
+          /* sedikit lebih kecil di HP */
+        }
+      }
+
+
+      .nav-links {
+        order: 3;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .logo {
+        order: 1;
+        height: 50px;
+      }
+
+      /* Sidebar & Konten */
+      .container {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        order: 2;
+      }
+
+      main {
+        order: 1;
+      }
+    }
+
+    /* KONTEN UTAMA */
+    .container {
+      flex: 1;
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      gap: 20px;
+    }
+
+    /* SIDEBAR */
+    aside {
+      background: var(--accent);
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      height: fit-content;
+      top: 84px;
+    }
+
+    aside h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside li {
+      margin-bottom: 10px;
+    }
+
+    aside a {
+      text-decoration: none;
+      color: var(--text);
+      transition: color 0.2s;
+    }
+
+    aside a:hover {
+      color: var(--primary);
+    }
+
+    /* MAIN CONTENT */
+    main {
+      flex: 1;
+      background: var(--accent);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    main h2 {
+      color: var(--text);
+      margin-bottom: 10px;
+      border-bottom: 2px solid #0a1a4d;
+      padding-bottom: 0.3rem;
+    }
+
+    main p {
+      margin-bottom: 12px;
+      color: var(--text);
+      text-align: justify;
+    }
+
+    main ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    main li {
+      margin-bottom: 8px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--text);
+      text-align: center;
+      padding: 16px;
+      border-top: 1px solid #e5e7eb;
+      color: var(--accent);
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE TANPA HAMBURGER */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        order: 1;
+      }
+
+      main {
+        order: 2;
+      }
+
+      .nav-links a {
+        padding: 0.3rem 0.8rem;
+      }
+
+      .logo {
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html">
+        <img class="logo" src="assets/logo.svg" alt="Logo ThinkLyttleStars">
+      </a>
+    </div>
+  </nav>
+
+  <!-- KONTEN -->
+  <div class="container">
+    <aside>
+      <h2>Daftar Materi</h2>
+      <ul>
+        <li><a href="#pengertian">Pengertian</a></li>
+        <li><a href="#tujuan">Tujuan</a></li>
+        <li><a href="#elemen">Elemen Desain</a></li>
+        <li><a href="#prinsip">Prinsip Desain</a></li>
+        <li><a href="#penerapan">Penerapan</a></li>
+        <li><a href="#kesimpulan">Kesimpulan</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="pengertian">
+        <h2>Pengertian Desain Grafis</h2>
+        <p>Desain grafis adalah proses komunikasi visual menggunakan elemen seperti teks, gambar, warna, dan bentuk
+          untuk menyampaikan pesan secara efektif.
+          Tujuannya bukan hanya estetika, tetapi juga kejelasan informasi dan kekuatan pesan visual. Desain Grafis juga
+          seni komunikasi visual yang menggunakan elemen seperti gambar, teks, warna, dan tata letak untuk menyampaikan
+          pesan secara efektif dan menarik. Proses ini menggabungkan seni dan teknologi untuk menciptakan konten visual
+          bagi berbagai media, mulai dari identitas merek, iklan, hingga desain situs web dan media sosial.</p>
+      </section>
+
+      <section id="tujuan">
+        <h2>Tujuan Desain Grafis</h2>
+        <ul>
+          <li>Meningkatkan daya tarik visual pesan atau produk.</li>
+          <li>Membentuk identitas visual seperti logo dan branding.</li>
+          <li>Menyampaikan informasi secara cepat dan menarik.</li>
+          <li>Mengajak audiens melakukan tindakan tertentu, seperti membeli atau mendukung kampanye.</li>
+        </ul>
+      </section>
+
+      <section id="elemen">
+        <h2>Elemen Desain Grafis</h2>
+        <ul>
+          <li><strong>Garis (Line):</strong> Membentuk struktur dan arah pandangan mata.</li>
+          <li><strong>Bentuk (Shape):</strong> Menciptakan objek visual yang dapat dikenali.</li>
+          <li><strong>Warna (Color):</strong> Memberi makna dan suasana emosional.</li>
+          <li><strong>Tekstur (Texture):</strong> Menambah kedalaman dan karakter.</li>
+          <li><strong>Ruang (Space):</strong> Mengatur keseimbangan antar elemen.</li>
+          <li><strong>Tipografi (Typography):</strong> Pemilihan huruf untuk memperkuat pesan.</li>
+        </ul>
+      </section>
+
+      <section id="prinsip">
+        <h2>Prinsip Desain Grafis</h2>
+        <ul>
+          <li><strong>Keseimbangan:</strong> Menjaga distribusi elemen agar tampak stabil.</li>
+          <li><strong>Kesatuan:</strong> Semua elemen mendukung satu pesan visual.</li>
+          <li><strong>Kontras:</strong> Menarik perhatian lewat perbedaan bentuk atau warna.</li>
+          <li><strong>Irama:</strong> Pola pengulangan elemen yang memberi alur visual.</li>
+          <li><strong>Penekanan:</strong> Bagian yang paling menonjol dalam desain.</li>
+        </ul>
+      </section>
+
+      <section id="penerapan">
+        <h2>Bidang Penerapan</h2>
+        <ul>
+          <li>Desain logo dan identitas merek.</li>
+          <li>Desain kemasan dan label produk.</li>
+          <li>Poster, brosur, dan media promosi.</li>
+          <li>UI/UX untuk aplikasi dan website.</li>
+          <li>Desain konten media sosial.</li>
+          <li>Infografis dan materi edukasi secara visual</li>
+        </ul>
+      </section>
+
+      <section id="kesimpulan">
+        <h2>Kesimpulan</h2>
+        <p>Desain grafis adalah perpaduan antara seni dan komunikasi visual yang berperan penting dalam menyampaikan
+          pesan secara efektif dan menarik.
+          Melalui pemahaman terhadap elemen (seperti warna, bentuk, tipografi) dan prinsip desain (seperti keseimbangan,
+          kontras, dan kesatuan),
+          seorang desainer dapat menciptakan karya yang tidak hanya indah secara visual, tetapi juga memiliki makna dan
+          tujuan yang jelas.</p>
+
+        <p>Dalam dunia modern, desain grafis menjadi bagian vital di berbagai bidang — mulai dari branding, media
+          sosial, hingga desain digital.
+          Dengan kreativitas dan pemahaman konsep yang tepat, desain grafis mampu mempengaruhi persepsi, membangun
+          identitas, serta memperkuat komunikasi antara pesan dan audiens.</p>
+      </section>
+      <a href="index.html" class="btnKembali">Kembali ke Beranda</a>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 ThinkLyttleStars. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+
+</html>

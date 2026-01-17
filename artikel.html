@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkLyttleStars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* === Responsif === */
+        @media (max-width: 900px) {
+            .card {
+                flex: 1 1 calc(50% - 1.5rem);
+                max-width: calc(50% - 1.5rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .burger-menu {
+                display: block;
+                cursor: pointer;
+            }
+
+            .burger-menu .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: #F3D58D;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 60px;
+                left: -100%;
+                background-color: #2E4365;
+                width: 100%;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                /* transition: left 0.3s ease-in-out; */
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links a {
+                display: block;
+                width: 90%;
+                margin: auto;
+            }
+
+            .hero {
+                flex-direction: column;
+                height: auto;
+                padding: 4rem 1.5rem 3rem 1.5rem;
+                text-align: center;
+            }
+
+            .hero img {
+                width: 70%;
+                max-width: 250px;
+                margin-bottom: 1.5rem;
+                order: -1;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            #kontak form {
+                width: 100%;
+                padding: 0 1rem;
+            }
+
+            #kontak form div {
+                width: 100% !important;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            #kontak form input,
+            #kontak form textarea {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <img class="logo" src="assets/logo.svg" alt="" srcset="">
+
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="artikel.html" class="active">Artikel</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="artikel" class="section">
+        <h2>Artikel Populer</h2>
+        <p style="max-width: 800px; margin: 0 auto; margin-bottom: 50px; line-height: 1.6;">
+            Temukan berbagai artikel menarik seputar teknologi, pemrograman, dan perkembangan dunia digital.
+            Mulai dari pengenalan Artificial Intelligence hingga panduan belajar bahasa pemrograman populer
+            seperti Python, JavaScript, dan HTML. Cocok untuk kamu yang ingin memperluas wawasan di era digital!
+        </p>
+        <div class="card-grid">
+            <div class="card">
+                <img src="assets/ai (2).jfif" alt="AI">
+                <div class="card-body">
+                    <h3>Apa Itu Artificial Intelligence?</h3>
+                    <p>Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi ini mengubah dunia.</p>
+                    <a href="index_ai.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/html.jfif" alt="HTML">
+                <div class="card-body">
+                    <h3>Mengenal HTML</h3>
+                    <p>Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.</p>
+                    <a href="index_html.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/internet.jfif" alt="Internet">
+                <div class="card-body">
+                    <h3>Bagaimana Internet Bekerja?</h3>
+                    <p>Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!</p>
+                    <a href="index_internet.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/py.jfif" alt="Python">
+                <div class="card-body">
+                    <h3>Mengenal Python lebih dalam</h3>
+                    <p>Mengapa Python menjadi pilihan favorit para pengembang dalam teknologi modern di seluruh dunia.
+                    </p>
+                    <a href="index_python.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/java.jfif" alt="JavaScript">
+                <div class="card-body">
+                    <h3>JavaScript itu apa sih?</h3>
+                    <p>Kuasai bahasa pemrograman web paling populer untuk membuat halaman kamu menjadi interaktif dan dinamis!</p>
+                    <a href="index_javascript.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/dtsains.jfif" alt="Data Science">
+                <div class="card-body">
+                    <h3>Langkah Awal Belajar Data Science</h3>
+                    <p>Mengenali dan memahami keterampilan dasar data science yang perlu dikuasai sebelum memulai.</p>
+                    <a href="index_data.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/cyberinternet.jfif" alt="Keamanan">
+                <div class="card-body">
+                    <h3>Keamanan di Dunia Internet</h3>
+                    <p>Menjaga keamanan di dunia internet bukan hanya tanggung jawab perusahaan teknologi tetapi juga setiap user.</p>
+                    <a href="index_keamanan.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/algoritma.jfif" alt="Algoritma">
+                <div class="card-body">
+                    <h3>Algoritma Dalam Kehidupan Sehari-hari</h3>
+                    <p>Setiap kegiatan sehari-hari bisa dilakukan dengan algoritma agar kita bekerja dengan lebih teratur dan efisien.</p>
+                    <a href="index_algoritma.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/desain.jfif" alt="Desain Grafis">
+                <div class="card-body">
+                    <h3>Desain Grafis</h3>
+                    <p>Seni komunikasi visual yang memadukan teks, gambar, dan warna untuk menyampaikan pesan secara menarik dan efektif.</p>
+                    <a href="index_desaingrafis.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/IOT.jfif" alt="iot">
+                <div class="card-body">
+                    <h3>Komponen Utama Internet of Things (IoT)</h3>
+                    <p>Pelajari bagian-bagian penting IoT yang membuat perangkat pintar bisa mengumpulkan, memproses, dan bertukar data secara otomatis.</p>
+                    <a href="index_IOT.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/uiux.jfif" alt="uiux">
+                <div class="card-body">
+                    <h3>Mengenal Konsep UI/UX untuk Website</h3>
+                    <p>Menciptakan tampilan menarik, interaktif, dan pengalaman pengguna yang nyaman serta mudah digunakan.</p>
+                    <a href="index_uiux.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/program.jfif" alt="Pemrograman">
+                <div class="card-body">
+                    <h3>Apa Saja Jenis Bahasa Pemrograman?</h3>
+                    <p>Pelajari berbagai bahasa pemrograman, serta kelebihan singkat masing-masing untuk memahami kekuatan unik mereka.</p>
+                    <a href="index_bprogram.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/web.jfif" alt="Website">
+                <div class="card-body">
+                    <h3>Perjalanan Awal Mula Website</h3>
+                    <p>Menelusuri sejarah lahirnya web hingga berkembang menjadi dunia digital luas yang menghubungkan manusia di seluruh dunia.</p>
+                    <a href="index_web.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 ThinkLyttleStars.</p>
+    </footer>
+
+    <script>
+        // script untuk hamburger menu
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burgerMenu.classList.toggle('toggle');
+        });
+    </script>
+</body>
+
+</html>

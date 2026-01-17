@@ -1,13 +1,220 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web-baru</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkLyttleStars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* === Responsif === */
+        @media (max-width: 900px) {
+            .card {
+                flex: 1 1 calc(50% - 1.5rem);
+                max-width: calc(50% - 1.5rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .burger-menu {
+                display: block;
+                cursor: pointer;
+            }
+
+            .burger-menu .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: #F3D58D;
+            }
+            .nav-links {
+                position: absolute;
+                top: 60px;
+                left: -100%;
+                background-color: #2E4365;
+                width: 100%;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                /* transition: left 0.3s ease-in-out; */
+            }
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links a {
+                display: block;
+                width: 90%;
+                margin: auto;
+            }
+
+            .hero {
+                flex-direction: column;
+                height: auto;
+                padding: 4rem 1.5rem 3rem 1.5rem;
+                text-align: center;
+            }
+
+            .hero img {
+                width: 70%;
+                max-width: 250px;
+                margin-bottom: 1.5rem;
+                order: -1;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+            #kontak form {
+                width: 100%;
+                padding: 0 1rem;
+            }
+
+            #kontak form div {
+                width: 100% !important;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            #kontak form input,
+            #kontak form textarea {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <img class="logo" src="assets/logo.svg" alt="" srcset="">
+
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="assets/1.png" alt="" srcset="">
+        <div class="hero-content">
+            <h1>Belajar Teknologi Jadi Mudah</h1>
+            <p>ThinkLyttleStars adalah ruang belajar yang sederhana dan ramah, di mana setiap artikel membantu kamu
+                memahami dunia digital dengan cara yang ringan.
+                Nggak perlu waktu lama, cukup luangkan beberapa menit untuk membaca dan kamu akan mendapat wawasan baru
+                yang bermanfaat untuk keseharianmu.</p>
+        </div>
+    </section>
+
+    <!-- Artikel Section -->
+    <section id="artikel" class="section">
+        <h2 style="padding-bottom: 30px;">Artikel Populer</h2>
+        <div class="card-grid">
+            <div class="card">
+                <img src="assets/ai (2).jfif" alt="AI">
+                <div class="card-body">
+                    <h3>Apa Itu Artificial Intelligence?</h3>
+                    <p>Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi ini mengubah dunia.</p>
+                    <a href="index_ai.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/html.jfif" alt="Coding">
+                <div class="card-body">
+                    <h3>Mengenal HTML</h3>
+                    <p>Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.</p>
+                    <a href="index_html.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/internet.jfif" alt="Internet">
+                <div class="card-body">
+                    <h3>Bagaimana Internet Bekerja?</h3>
+                    <p>Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!</p>
+                    <a href="index_internet.html" class="btn-outline">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <a href="artikel.html" class="btn-outline" style="margin-left: auto; display: block; width: fit-content;">Artikel Lainnya</a>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="section">
+        <h2>Contact Us</h2>
+        <form name="contact-form"
+            style="display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 15px;">
+            <div style="display: flex;align-items: center;justify-content: space-between;width: 400px;">
+                <label for="name" style="font-size: 1.1rem;">Nama Lengkap</label>
+                <input type="text" id="name" name="nama"
+                    style="width: 250px;padding: 8px 10px;border: 1px solid #ccc;border-radius: 4px;font-size: 1rem;" />
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;width: 400px;">
+                <label for="email" style="font-size: 1.1rem;">Email</label>
+                <input type="email" id="email" name="email"
+                    style="width: 250px;padding: 8px 10px;border: 1px solid #ccc;border-radius: 4px;font-size: 1rem;" />
+            </div>
+            <div style="display: flex;align-items: center;justify-content: space-between;width: 400px;">
+                <label for="pesan" style="font-size: 1.1rem;">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="3"
+                    style="width: 250px;padding: 8px 10px;border: 1px solid #ccc;border-radius: 4px;font-size: 1rem;resize: none;"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+                Kirim
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 ThinkLyttleStars.</p>
+    </footer>
+
+    <script>
+        const form = document.forms['contact-form']
+        form.reset(); // mengosongkan form
+
+        // script untuk hamburger menu
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burgerMenu.classList.toggle('toggle');
+        });
+    </script>
+</body>
+
 </html>

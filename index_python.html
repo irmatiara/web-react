@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal Python Lebih Dalam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .materi-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .materi-container h2 {
+            color: #2E4365;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #F3D58D;
+            padding-bottom: 0.3rem;
+        }
+
+        .materi-container p {
+            text-align: justify;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .materi-container ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .materi-container ul li {
+            margin-bottom: 0.6rem;
+            list-style-type: square;
+            color: #2E4365;
+        }
+
+        blockquote {
+            border-left: 4px solid #F3D58D;
+            padding-left: 1rem;
+            color: #555;
+            font-style: italic;
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        .fact-box {
+            background-color: #2E4365;
+            color: #F3D58D;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+
+        .timeline {
+            border-left: 3px solid #F3D58D;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .timeline li {
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: -9px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background-color: #F3D58D;
+            border-radius: 50%;
+        }
+
+        .btnKembali {
+            display: inline-block;
+            background-color: #F3D58D;
+            color: #2E4365;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btnKembali:hover {
+            background-color: #2E4365;
+            color: #F3D58D;
+        }
+
+        /* Media Queries untuk Responsivitas */
+        /* Tablet (iPad, dll.) - 768px to 1024px */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .materi-container {
+                max-width: 90%;
+                padding: 1.5rem;
+            }
+            .materi-container h2 {
+                font-size: 1.5rem;
+            }
+            .materi-container p {
+                font-size: 1rem;
+            }
+            .materi-container ul li {
+                font-size: 1rem;
+            }
+            .fact-box {
+                padding: 0.8rem;
+                font-size: 0.95rem;
+            }
+            .timeline {
+                padding-left: 0.8rem;
+            }
+            .timeline li::before {
+                left: -7px;
+            }
+            blockquote {
+                padding-left: 0.8rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Mobile (HP, iOS, Android) - up to 768px */
+        @media (max-width: 768px) {
+            .materi-container {
+                max-width: 95%;
+                margin: 1rem auto;
+                padding: 1rem;
+            }
+            .materi-container h2 {
+                font-size: 1.3rem;
+                border-bottom-width: 1px;
+                padding-bottom: 0.2rem;
+            }
+            .materi-container p {
+                font-size: 0.95rem;
+                margin-bottom: 1rem;
+            }
+            .materi-container ul {
+                margin-left: 1rem;
+            }
+            .materi-container ul li {
+                font-size: 0.95rem;
+                margin-bottom: 0.5rem;
+            }
+            .fact-box {
+                padding: 0.7rem;
+                font-size: 0.9rem;
+            }
+            .timeline {
+                padding-left: 0.5rem;
+            }
+            .timeline li {
+                margin-bottom: 0.8rem;
+            }
+            .timeline li::before {
+                left: -6px;
+                width: 8px;
+                height: 8px;
+            }
+            blockquote {
+                padding-left: 0.5rem;
+                font-size: 0.9rem;
+                margin: 0.8rem 0 1.2rem 0;
+            }
+            .btnKembali {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Small Mobile - up to 480px */
+        @media (max-width: 480px) {
+            .materi-container {
+                padding: 0.8rem;
+            }
+            .materi-container h2 {
+                font-size: 1.2rem;
+            }
+            .materi-container p {
+                font-size: 0.9rem;
+            }
+            .materi-container ul li {
+                font-size: 0.9rem;
+            }
+            .fact-box {
+                padding: 0.6rem;
+                font-size: 0.85rem;
+            }
+            .timeline li::before {
+                left: -5px;
+                width: 6px;
+                height: 6px;
+            }
+            blockquote {
+                padding-left: 0.4rem;
+                font-size: 0.85rem;
+            }
+            .btnKembali {
+                padding: 0.5rem 1rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Desktop Besar (MacBook, dll.) - min-width 1025px */
+        @media (min-width: 1025px) {
+            .materi-container {
+                max-width: 1100px;
+                padding: 2.5rem;
+            }
+            .materi-container h2 {
+                font-size: 1.8rem;
+            }
+            .materi-container p {
+                font-size: 1.1rem;
+            }
+            .materi-container ul li {
+                font-size: 1.1rem;
+            }
+            .fact-box {
+                padding: 1.2rem;
+                font-size: 1.1rem;
+            }
+            blockquote {
+                padding-left: 1.2rem;
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .materi-container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html"><img class="logo" src="assets/logo.svg" alt="Logo ThinkLyttleStars"></a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mengenal Python Lebih Dalam</h1>
+            <p>Bahasa pemrograman sederhana yang menggerakkan dunia modern.</p>
+        </div>
+    </section>
+
+    <section class="materi-container">
+        <h2>Apa Itu Python?</h2>
+        <p>
+            Python adalah bahasa pemrograman tingkat tinggi yang dirancang agar mudah dibaca dan dipahami.
+            Bahasa ini diciptakan oleh <b>* Guido van Rossum *</b> dan dirilis pertama kali pada tahun 1991.
+            Python terkenal karena sintaksnya yang sederhana dan kemampuannya digunakan di berbagai bidang.
+        </p>
+        <div class="fact-box">
+            Fakta Menarik : Nama " Python " bukan berasal dari ular, melainkan dari acara komedi Inggris "Monty Python's Flying Circus" !
+        </div>
+
+        <h2>Sejarah Singkat Python</h2>
+        <div class="timeline">
+            <ul>
+                <li><b>1991 :</b> Versi pertama Python dirilis oleh Guido van Rossum.</li>
+                <li><b>2000 :</b> Python 2.0 hadir dengan fitur pengumpulan sampah otomatis (garbage collection).</li>
+                <li><b>2008 :</b> Python 3.0 diperkenalkan dengan sintaks baru yang lebih bersih dan modern.</li>
+                <li><b>2020-an :</b> Python menjadi salah satu bahasa pemrograman paling populer di dunia.</li>
+            </ul>
+        </div>
+
+        <h2>Mengapa Python Begitu Populer?</h2>
+        <p>
+            Kesederhanaan Python membuatnya menjadi pilihan utama bagi pemula maupun profesional.
+            Bahasa ini digunakan untuk berbagai keperluan dari pembuatan situs web, otomatisasi, hingga kecerdasan buatan (AI).
+        </p>
+        <ul>
+            <li>Mudah dipelajari dan dibaca</li>
+            <li>Komunitas besar dan dokumentasi lengkap</li>
+            <li>Bersifat open-source (gratis digunakan)</li>
+            <li>Memiliki ribuan library siap pakai</li>
+        </ul>
+
+        <h2>Bidang Penggunaan Python</h2>
+        <ul>
+            <li><b>Data Science & Machine Learning :</b> Menggunakan pustaka seperti Pandas, NumPy, dan Scikit-learn.</li>
+            <li><b>Web Development :</b> Menggunakan framework seperti Django dan Flask.</li>
+            <li><b>Automasi :</b> Menjalankan tugas berulang secara otomatis.</li>
+            <li><b>Game Development :</b> Menggunakan library seperti Pygame.</li>
+            <li><b>IoT & Robotics :</b> Mengontrol sensor dan perangkat pintar.</li>
+        </ul>
+
+        <h2>Contoh Kode Python Sederhana</h2>
+        <pre style="background:#2E4365; color:#F3D58D; padding:1rem; border-radius:8px; overflow:auto;">
+#CONTOH PROGRAM PYTHON SEDERHANA
+nama = input(" Siapa namamu ? ")
+print(f" Hai, {nama}! Selamat datang di dunia Python yang sangat menyenangkan ini ! ")
+        </pre>
+
+        <blockquote>
+            “ Kekuatan Python ada pada kesederhanaannya. Kamu bisa fokus pada ide, bukan pada sintaks. ”
+        </blockquote>
+
+        <h2>Langkah Belajar Python</h2>
+        <ul>
+            <li>Mulai dari dasar : variabel, tipe data, dan perulangan.</li>
+            <li>Pelajari struktur data seperti list, tuple, dan dictionary.</li>
+            <li>Coba bangun proyek sederhana seperti kalkulator atau game tebak angka.</li>
+            <li>Gunakan platform seperti Replit, Jupyter Notebook, atau Visual Studio Code untuk latihan.</li>
+        </ul>
+
+        <h2>Python di Dunia Nyata</h2>
+        <p>
+            Banyak perusahaan besar seperti Google, Netflix, dan Spotify menggunakan Python untuk berbagai keperluan.
+            Bahkan kecerdasan buatan dan analisis data modern pun tidak bisa lepas dari Python.
+        </p>
+
+        <h2>Kesimpulan</h2>
+        <p>
+            Python bukan hanya bahasa pemrograman tetapi juga gerbang menuju banyak bidang menarik seperti AI, data, dan web.
+            Jika kamu baru memulai belajar pemrograman, Python adalah tempat terbaik untuk memulai perjalananmu.
+        </p>
+
+        <a href="index.html" class="btnKembali">Kembali ke Beranda</a>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 ThinkLyttleStars.</p>
+    </footer>
+</body>
+
+</html>

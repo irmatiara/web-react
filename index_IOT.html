@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkLyttleStars</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f1efe9;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background:#2E4365;
+      color: #F3D58D;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .logo h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #F3D58D;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    .active {
+      background: hsl(42, 81%, 75%);
+      color: #2E4365;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      background: linear-gradient(135deg, #eee4c6 20%, #c9c3ad 80%);
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      padding-right: 2rem;
+    }
+
+    .hero-text h2 {
+      font-size: 2.2rem;
+      color: #1e3a8a;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      color: #374151;
+      font-size: 1.1rem;
+    }
+
+    .hero-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 90%;
+      max-width: 400px;
+    }
+
+    /* ===== SECTION ===== */
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section h3 {
+      color: #1e3a8a;
+      margin-bottom: 0.8rem;
+      font-size: 1.6rem;
+    }
+
+    section p {
+      color: #374151;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+
+    .btnKembali {
+        display: inline-block;
+        max-width: 200px; /* maksimal lebar */
+        width: auto; /* agar lebar sesuai isi */
+        background-color: #F3D58D;
+        color: #2E4365;
+        border: none;
+        padding: 0.7rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+        margin-top: 1rem;
+    }
+
+
+    .btnKembali:hover {
+        background-color: #2E4365;
+        color: #F3D58D;
+    }
+
+    /* ===== INFO BOX ===== */
+    .info-box {
+      background: #f1f5f9;
+      border-left: 5px solid #1e3a8a;
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* ===== GRID CARD ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      color: #1e3a8a;
+      margin-bottom: 0.8rem;
+    }
+
+    /* ===== KESIMPULAN ===== */
+    .kesimpulan {
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+      padding: 1.5rem;
+      border-radius: 10px;
+      border-left: 5px solid #1e3a8a;
+      margin-top: 2rem;
+    }
+
+    .kesimpulan h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #2E4365;
+      color: #F3D58D;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-text {
+        padding-right: 0;
+      }
+
+      .hero-text h2 {
+        font-size: 1.8rem;
+      }
+
+      .hero-img img {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.svg" alt="Logo ThinkLyttleStars">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Pengenalan Internet of Things (IoT)</h2>
+      <p>Internet of Things (IoT) adalah konsep di mana berbagai perangkat fisik saling terhubung melalui internet,
+        memungkinkan mereka untuk mengumpulkan dan bertukar data secara otomatis.</p>
+    </div>
+    <div class="hero-img">
+      <img src="assets/logo iot.png" alt="Ilustrasi IoT">
+    </div>
+  </section>
+
+  <section>
+    <h3>Apa Itu IoT?</h3>
+    <p>IoT (Internet of Things) adalah konsep jaringan perangkat fisik, seperti sensor, mesin, dan peralatan, yang terhubung ke internet untuk mengumpulkan dan bertukar data secara otomatis tanpa campur tangan manusia.
+         Manfaatnya adalah meningkatkan efisiensi, efektivitas, dan konektivitas di berbagai sektor melalui otomatisasi dan pemantauan data real-time. </p>
+<p><strong>Cara kerja:</strong>
+    <ul>
+        <li>Mengumpulkan Data: Perangkat IoT dilengkapi sensor yang mengumpulkan data fisik (seperti suhu, kelembapan, lokasi) atau status dari lingkungannya. </li>
+        <li>Berkomunikasi: Data ini kemudian dikirim melalui jaringan internet ke sistem pusat atau cloud untuk diproses dan dianalisis. </li>
+        <li>Beraksi: Berdasarkan data yang dianalisis, sistem dapat mengambil tindakan otomatis, seperti mengirim perintah ke perangkat lain atau memberikan notifikasi kepada pengguna. </li>
+    </ul>
+</p>
+<p><strong>Contoh Penerapan:</strong>
+    <ul>
+        <li>Rumah Pintar (Smart Home): Lampu dan AC dapat diatur secara otomatis melalui aplikasi di ponsel, atau speaker pintar yang terhubung ke internet bisa menjalankan perintah suara.  </li>
+        <li>Pertanian (Smart Farming): Sensor mendeteksi kelembapan tanah dan secara otomatis mengaktifkan sistem irigasi, atau drone dapat digunakan untuk memantau tanaman.  </li>
+        <li>Transportasi (Smart City): Sistem parkir yang pintar menggunakan sensor untuk mengarahkan pengemudi ke tempat parkir yang kosong, dan kendaraan yang terhubung bisa saling berbagi data untuk meningkatkan keselamatan. </li>
+        <li>Kesehatan (Smart Healthcare): Perangkat wearable mengirimkan data kesehatan ke dokter, atau peralatan medis dapat dipantau dari jarak jauh.</li>
+        <li>Manufaktur (Smart Manufacturing): Sensor pada mesin memprediksi kapan waktu yang tepat untuk perawatan agar tidak terjadi kerusakan tak terduga. </li>
+    </ul>
+</p>
+
+
+    <div class="info-box">
+      <strong>Contoh sederhana:</strong> Ketika kamu mengatur suhu ruangan dari ponsel melalui smart AC, kamu sedang
+      menggunakan IoT!
+    </div>
+
+    <h3>Komponen Utama IoT</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>1. Sensor & Aktuator</h4>
+        <p><b>Sensor:</b> Mengumpulkan data dari lingkungan fisik, seperti suhu, cahaya, kelembaban, atau gerakan, dan mengubahnya menjadi data digital.
+<b>Aktuator:</b>Berfungsi sebaliknya dari sensor, yaitu melakukan tindakan fisik berdasarkan data yang diterima. Contohnya adalah menyalakan lampu atau mengontrol katup air.</p>
+      </div>
+      <div class="card">
+        <h4>2. Konektivitas</h4>
+        <p>Merupakan jalur yang memungkinkan perangkat IoT saling terhubung dan bertukar data melalui internet. 
+            Ini bisa berupa Wi-Fi, Bluetooth, seluler, atau jaringan lainnya.</p>
+      </div>
+      <div class="card">
+        <h4>3. Cloud & Data Processing</h4>
+        <p>Data yang dikumpulkan dikirim ke cloud untuk dianalisis dan diolah secara real-time.</p>
+      </div>
+      <div class="card">
+        <h4>4. Aplikasi</h4>
+        <p>Pengguna dapat memantau dan mengontrol perangkat melalui aplikasi yang terhubung.</p>
+      </div>
+      <div class="card">
+        <h4>5. Perangkat Cerdas (Aksesoris)</h4>
+        <p>Perangkat yang memiliki kemampuan komputasi untuk mengumpulkan data, memprosesnya, dan berkomunikasi melalui internet. 
+            Contohnya adalah jam tangan pintar, lampu pintar, atau kamera CCTV. </p>
+      </div>
+      <div class="card">
+        <h4>6. Pemrosesan Data</h4>
+        <p><b>Mikrokontroler:</b> Bertindak sebagai otak perangkat yang memproses data yang diterima dari sensor dan menjalankan logika atau algoritma.
+<b>Sistem Pemrosesan Data:</b> Data yang dikumpulkan dapat diproses di "edge" (dekat perangkat) atau di "cloud" untuk dianalisis dan diolah lebih lanjut.</p>
+      </div>
+    </div>
+
+    <div class="kesimpulan">
+      <h3>Kesimpulan</h3>
+      <p>IoT telah mengubah cara manusia berinteraksi dengan dunia digital dan fisik. Dengan menghubungkan perangkat ke
+        internet, kita dapat membuat kehidupan menjadi lebih efisien, aman, dan nyaman. Namun, kemajuan ini juga perlu
+        diimbangi dengan perhatian terhadap keamanan data dan privasi pengguna.</p>
+    </div>
+    <a href="index.html" class="btnKembali">Kembali ke Beranda</a>
+  </section>
+
+  <footer>
+    <p>© 2025 ThinkLyttleStars. Semua hak dilindungi.</p>
+  </footer>
+</body>
+
+</html>

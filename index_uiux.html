@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkLyttleStars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* === Responsif === */
+        @media (max-width: 900px) {
+            .card {
+                flex: 1 1 calc(50% - 1.5rem);
+                max-width: calc(50% - 1.5rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .burger-menu {
+                display: block;
+                cursor: pointer;
+            }
+
+            .burger-menu .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: #F3D58D;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 60px;
+                left: -100%;
+                background-color: #2E4365;
+                width: 100%;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links a {
+                display: block;
+                width: 90%;
+                margin: auto;
+            }
+
+            .hero {
+                flex-direction: column;
+                height: auto;
+                padding: 4rem 1.5rem 3rem 1.5rem;
+                text-align: center;
+            }
+
+            .hero img {
+                width: 70%;
+                max-width: 250px;
+                margin-bottom: 1.5rem;
+                order: -1;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        #artikel {
+            position: relative;
+            background: url("assets/uiux.jpg") center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        #artikel::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: inherit;
+            filter: blur(3px);
+        }
+
+        .container-kolom {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 50px auto;
+            padding: 0 30px;
+            max-width: 1400px;
+        }
+
+        .card-kolom {
+            flex-basis: 400px;
+            flex-grow: 1;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <img class="logo" src="assets/logo.svg" alt="" srcset="">
+
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="artikel.html" class="active">Artikel</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="artikel">
+        <div class="card card-uiux">
+            <h1 style="margin-bottom: 20px;">Memahami UI/UX Lebih Dekat</h1>
+            <p style="font-size: 15px;">
+                Pelajari perbedaan UI dan UX, komponen utama, hubungan keduanya, serta prinsip dasar yang menjadikan
+                website lebih estetik, fungsional, dan disukai pengguna.
+            </p>
+        </div>
+    </section>
+    <section class="konten-artikel">
+        <div class="card" style="padding: 30px; margin: 50px;">
+            <h1>Pengertian UI/UX</h1>
+            <p><span style="font-weight: bold;">UI (User Interface)</span> adalah tampilan antarmuka pengguna pada website. Fokus pada tata letak, warna, tipografi, ikon, tombol, dan elemen visual lainnya. Tujuannya adalah membuat tampilan menarik, konsisten, dan mudah digunakan.</p>
+            <p><span style="font-weight: bold;">UX (User Experience)</span> adalah pengalaman pengguna saat berinteraksi dengan website. Fokus pada alur, kenyamanan, kecepatan, dan kemudahan mencapai tujuan. Tujuannya adalah membuat pengguna puas dan betah menggunakan website.</p>
+        </div>
+        <div class="container-kolom" style="padding-top: 50px;">
+            <div class="card-kolom">
+                <h1 style="text-align: center;">Komponen Utama UI</h1>
+                <ul class="komponen-grid">
+                    <li><span style="font-weight: bold;">Layout (Tata Letak) :</span> Struktur halaman harus rapi dan mudah dipahami.</li>
+                    <li><span style="font-weight: bold;">Warna & Kontras :</span> Gunakan kombinasi yang nyaman di mata dan sesuai identitas brand.</li>
+                    <li><span style="font-weight: bold;">Tipografi :</span> Pilih font yang mudah dibaca dan konsisten.</li>
+                    <li><span style="font-weight: bold;">Ikon & Gambar :</span> Gunakan simbol yang jelas dan relevan.</li>
+                    <li><span style="font-weight: bold;">Responsivitas :</span> Tampilan harus menyesuaikan semua perangkat.</li>
+                </ul>
+            </div>
+            <div class="card-kolom">
+                <h1 style="text-align: center;">Komponen Utama UX</h1>
+                <ul class="komponen-grid">
+                    <li><span style="font-weight: bold;">Struktur Navigasi :</span> Menu jelas, tidak membingungkan pengguna.</li>
+                    <li><span style="font-weight: bold;">Kecepatan Akses :</span> Website harus cepat dimuat.</li>
+                    <li><span style="font-weight: bold;">Kemudahan Interaksi :</span> Form, tombol, dan fitur mudah digunakan.</li>
+                    <li><span style="font-weight: bold;">Alur Pengguna :</span> Pengguna tahu apa yang harus dilakukan.</li>
+                    <li><span style="font-weight: bold;">Feedback & Error Handling :</span> Tampilkan pesan yang membantu jika terjadi kesalahan.</li>
+                </ul>
+            </div>
+        </div>
+        <div style="padding-top: 50px;">
+            <h1 style="text-align: center; margin-bottom: 30px;">Hubungan UI & UX</h1>
+            <p style="text-align: center;"><span style="font-weight: bold;">UI</span> dan <span style="font-weight: bold;">UX</span> saling melengkapi:</p>
+            <ul class="circle-container">
+                <li class="circle-item">
+                    <p><span style="font-weight: bold;">UI</span>Bagaimana tampak dan terasa.</p>
+                </li>
+                <li class="circle-item">
+                    <p><span style="font-weight: bold;">UX</span>Bagaimana rasanya digunakan.</p>
+                </li>
+            </ul>
+            <div class="komponen-grid">
+                <li style="margin-left: 50px; margin-bottom: 50px; margin-right: 50px;">Desain UI yang bagus tanpa UX yang baik membuat pengguna bingung, sedangkan UX yang hebat tanpa UI menarik membuat pengguna cepat bosan.</li>
+            </div>
+        </div>
+        <div class="card" style="padding: 30px; margin: 50px;">
+            <h1>Prinsip Dasar UI & UX</h1>
+            <p><span style="font-weight: bold;">Sederhana (Simplicity) :</span> Hindari elemen berlebihan.</p>
+            <p><span style="font-weight: bold;">Konsisten (Consistency) :</span> Gaya desain seragam di semua halaman.</p>
+            <p><span style="font-weight: bold;">Hierarki Visual (Visual Hierarchy) :</span> Informasi penting ditonjolkan.</p>
+            <p><span style="font-weight: bold;">Aksesibilitas (Accessibility) :</span> Dapat digunakan oleh semua pengguna.</p>
+            <p><span style="font-weight: bold;">User-Centered Design :</span> Semua keputusan berbasis kebutuhan pengguna.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 ThinkLyttleStars.</p>
+    </footer>
+
+    <script>
+        // script untuk hamburger menu
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burgerMenu.classList.toggle('toggle');
+        });
+    </script>
+</body>
+
+</html>

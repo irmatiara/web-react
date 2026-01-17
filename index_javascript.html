@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript itu Apa Sih?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .materi-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #f0f4f8;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .materi-container h2 {
+            color: #2E4365;
+            margin-bottom: 1rem;
+            border-left: 6px solid #F3D58D;
+            padding-left: 0.5rem;
+        }
+
+        .materi-container p {
+            text-align: justify;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .materi-container ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .materi-container ul li {
+            margin-bottom: 0.6rem;
+            list-style-type: circle;
+            color: #2E4365;
+        }
+
+        blockquote {
+            border-left: 4px solid #F3D58D;
+            padding-left: 1rem;
+            color: #555;
+            font-style: italic;
+            margin: 1rem 0 1.5rem 0;
+            background-color: #e8eaf6;
+            border-radius: 6px;
+        }
+
+        .fact-box {
+            background-color: #2E4365;
+            color: #F3D58D;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+
+        .challenge-box {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            font-weight: 500;
+            border: 1px solid #ffeeba;
+        }
+
+        .timeline {
+            border-left: 3px solid #F3D58D;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .timeline li {
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: -9px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background-color: #F3D58D;
+            border-radius: 50%;
+        }
+
+        .btnKembali {
+            display: inline-block;
+            background-color: #F3D58D;
+            color: #2E4365;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btnKembali:hover {
+            background-color: #2E4365;
+            color: #F3D58D;
+        }
+
+        pre {
+            background-color: #dbe9f4;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: #2E4365;
+        }
+
+        @media (max-width: 600px) {
+            .materi-container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html"><img class="logo" src="assets/logo.svg" alt="Logo ThinkLyttleStars"></a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>JavaScript itu Apa Sih?</h1>
+            <p>Pelajari bahasa yang membuat web hidup dan interaktif, dari awal hingga masa depan!</p>
+        </div>
+    </section>
+
+    <section class="materi-container">
+        <h2>JavaScript: Bahasa Ajaib Web</h2>
+        <p>
+            JavaScript adalah bahasa pemrograman yang memungkinkan halaman web statis menjadi interaktif. Bayangkan halaman web
+            tanpa JavaScript: tombol tidak bisa diklik, form tidak bisa divalidasi, animasi tidak bergerak, dan pengalaman
+            pengguna terasa kaku. JavaScript menghidupkan web, membuatnya responsif, dan memungkinkan pengembang membangun
+            pengalaman digital yang kompleks.
+        </p>
+
+        <h2>Sejarah dan Evolusi JavaScript</h2>
+        <p>
+            JavaScript lahir pada tahun 1995 dari tangan Brendan Eich di Netscape. Awalnya disebut Mocha, kemudian LiveScript,
+            dan akhirnya dinamai JavaScript. Meski namanya mirip Java, keduanya sangat berbeda. JavaScript awalnya dirancang
+            untuk membuat halaman web interaktif sederhana, tapi sekarang menjadi bahasa pemrograman universal yang bisa dijalankan
+            di browser maupun server.
+        </p>
+
+        <div class="timeline">
+            <li>1995: JavaScript lahir di Netscape Navigator.</li>
+            <li>1996: Versi awal JavaScript mulai digunakan untuk validasi form dan efek sederhana.</li>
+            <li>1997: ECMAScript standard diperkenalkan, menetapkan aturan dan sintaks resmi.</li>
+            <li>2005: AJAX populer, JavaScript digunakan untuk membuat web dinamis dan responsive.</li>
+            <li>2015: ES6 hadir dengan fitur modern seperti arrow function, let/const, template literals, dan class.</li>
+            <li>2025: JavaScript tetap menjadi tulang punggung web, mobile, desktop, dan server modern.</li>
+        </div>
+
+        <div class="fact-box">
+            Fakta Menarik: JavaScript digunakan oleh semua browser modern. Tanpa JavaScript, lebih dari 90% website interaktif
+            tidak bisa berjalan normal.
+        </div>
+
+        <h2>Fitur Utama JavaScript</h2>
+        <ul>
+            <li>Interaktif: mengubah konten halaman tanpa reload</li>
+            <li>Event-driven: bereaksi terhadap aksi pengguna (klik, scroll, input)</li>
+            <li>Multiparadigma: mendukung OOP, fungsional, dan imperatif</li>
+            <li>Browser & Server: bisa dijalankan di client maupun server (Node.js)</li>
+            <li>Ekosistem Besar: ribuan library dan framework untuk berbagai kebutuhan</li>
+        </ul>
+
+        <h2>Contoh Kode JavaScript</h2>
+        <p>
+            Contoh sederhana menampilkan pesan di browser:
+        </p>
+        <pre>
+&lt;script&gt;
+    let nama = "ThinkLyttleStars";
+    console.log("Halo, " + nama + "! Selamat datang di dunia JavaScript.");
+&lt;/script&gt;
+        </pre>
+
+        <div class="challenge-box">
+            Tantangan Mini: Ubah nilai <code>nama</code> menjadi namamu sendiri, lalu jalankan di browser. Apa yang terjadi?
+        </div>
+
+        <h2>Framework dan Library Populer</h2>
+        <p>
+            JavaScript memiliki banyak tools yang memudahkan pengembangan:
+        </p>
+        <ul>
+            <li>React.js: membangun UI interaktif dengan komponen reusable</li>
+            <li>Vue.js: framework progresif, cocok untuk proyek kecil hingga menengah</li>
+            <li>Angular: framework lengkap untuk aplikasi enterprise</li>
+            <li>Node.js: menjalankan JavaScript di server</li>
+            <li>Express.js: membuat server web dengan cepat dan efisien</li>
+            <li>jQuery: meskipun populer di masa lalu, masih digunakan untuk manipulasi DOM cepat</li>
+        </ul>
+
+        <h2>JavaScript dalam Kehidupan Nyata</h2>
+        <p>
+            JavaScript ada di hampir semua bidang teknologi:
+        </p>
+        <ul>
+            <li>Web Development: interaktif, responsive, SPA (Single Page Application)</li>
+            <li>Mobile Apps: React Native, Ionic</li>
+            <li>Server & Backend: Node.js untuk API, server-side scripting</li>
+            <li>Game Development: Phaser.js untuk game 2D di browser</li>
+            <li>AI & Data Visualization: TensorFlow.js, D3.js</li>
+        </ul>
+
+        <h2>Masa Depan JavaScript</h2>
+        <p>
+            JavaScript terus berevolusi dengan komunitas global besar. Dari web, mobile, server, hingga AI, JavaScript tetap
+            relevan. Menguasai JavaScript membuka banyak peluang karier di bidang teknologi, mulai dari web developer, front-end
+            engineer, full-stack, hingga machine learning engineer.
+        </p>
+
+        <h2>Tips Belajar JavaScript</h2>
+        <ul>
+            <li>Mulai dari dasar: variabel, tipe data, operator, logika</li>
+            <li>Pelajari DOM dan event handling</li>
+            <li>Latihan membuat proyek mini: to-do list, kalkulator, permainan sederhana</li>
+            <li>Kenali library/framework populer untuk meningkatkan produktivitas</li>
+            <li>Bergabung dengan komunitas: forum, Discord, GitHub</li>
+        </ul>
+
+        <blockquote>
+            "JavaScript bukan sekadar bahasa pemrograman, tapi kunci untuk membuat web hidup dan pengalaman digital lebih menyenangkan."
+        </blockquote>
+
+        <a href="index.html" class="btnKembali">Kembali ke Beranda</a>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 ThinkLyttleStars. Semua hak dilindungi.</p>
+    </footer>
+</body>
+
+</html>

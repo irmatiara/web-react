@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awal Mula Website</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #021431;
+            color: #e8f1ff;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .navbar {
+            background: #2E4365;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+        }
+        .logo {
+            height: 70px;
+        }
+        .nav-links {
+            display: flex;
+            gap: .8rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #F3D58D;
+            padding: .4rem 1rem;
+            text-decoration: none;
+            border: 1px solid #F3D58D;
+            border-radius: 6px;
+        }
+        .nav-links a:hover {
+            background: #F3D58D;
+            color: #2E4365;
+        }
+
+        .hero-article {
+            padding: 3rem 1rem;
+            text-align: center;
+            background: linear-gradient(135deg,#0039A6,#021431);
+            border-bottom: 2px solid #1A4DBB;
+        }
+        .hero-article h1 {
+            color: #F3D58D;
+            font-size: 2.4rem;
+        }
+        .hero-article p {
+            color: #cfe0ff;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+
+        .timeline {
+            position: relative;
+        }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            background: #1A4DBB;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            border-radius: 10px;
+        }
+        .item {
+            background: #0A1A36;
+            padding: 1.2rem 1.2rem 1.2rem 3.5rem;
+            border-radius: 12px;
+            border: 1px solid #1A4DBB;
+            margin-bottom: 1.4rem;
+            position: relative;
+            transition: .3s;
+        }
+        .item:hover {
+            background: #112650;
+            transform: translateX(8px);
+        }
+        .item::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: #F3D58D;
+            position: absolute;
+            left: 14px;
+            top: 20px;
+            border-radius: 50%;
+        }
+        h2 {
+            color: #67A6FF;
+        }
+
+        .funfact {
+            background: #0039A6;
+            color: #F3D58D;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            text-align: center;
+            border: 1px solid #67A6FF;
+            font-weight: 600;
+        }
+
+        .btn-area {
+            margin-top: 2.5rem;
+            text-align: left;
+        }
+        .btn-back {
+            display: inline-block;
+            background: #F3D58D;
+            color: #2E4365;
+            padding: .6rem 1.3rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-back:hover {
+            background: #2E4365;
+            color: #F3D58D;
+        }
+
+        .footer {
+            text-align: center;
+            background: #0f0f0f;
+            padding: 1rem;
+            color: #F3D58D;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html">
+                <img class="logo" src="assets/logo.svg" alt="ThinkLyttleStars">
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero-article">
+        <h1>Awal Mula Website</h1>
+        <p>Bagaimana web lahir dan berubah jadi dunia digital besar seperti sekarang?</p>
+    </header>
+
+    <main class="wrapper">
+
+        <section class="timeline">
+        <div class="item">
+            <h2>1989 — Ide Website Lahir</h2>
+            <p>Sir Tim Berners-Lee punya visi: bagaimana jika kita bisa saling berbagi informasi
+            dengan cara yang lebih mudah antar komputer di seluruh dunia? Dari sinilah konsep
+            <strong>World Wide Web (WWW)</strong> muncul sebagai solusi.</p>
+        </div>
+
+        <div class="item">
+            <h2>1991 — Website Pertama di Dunia</h2>
+            <p>Website pertama online dengan alamat:  
+            <em>info.cern.ch</em>  
+            Isinya? Penjelasan tentang apa itu World Wide Web!  
+            Sederhana banget, hanya teks hitam putih tanpa gambar.</p>
+        </div>
+
+        <div class="item">
+            <h2>1993 — Browser dengan Tampilan Gambar</h2>
+            <p>Mosaic hadir dengan inovasi besar: menampilkan <strong>gambar di dalam halaman!</strong>  
+            Internet mulai terasa seperti “dunia baru yang bisa dilihat”.</p>
+        </div>
+
+        <div class="item">
+            <h2>1995 — HTML 2.0 dan Web Modern Dimulai</h2>
+            <p>Muncullah standar HTML. Website mulai memiliki formulir,
+            hyperlink lebih teratur, dan tampilan tidak monoton lagi.</p>
+        </div>
+
+        <div class="item">
+            <h2>2000-an — Web Jadi Sosial</h2>
+            <p>Era <strong>Web 2.0</strong>: orang tak lagi hanya membaca —
+            tapi bisa menulis, mengupload foto, berkomentar, dan berbagi.  
+            Muncul platform seperti Facebook, YouTube, dan Wikipedia.</p>
+        </div>
+
+        <div class="item">
+            <h2>2020-an — Web Ada di Mana-Mana</h2>
+            <p>Smartphone. IoT. AI. VR.  
+            Website kini bukan cuma halaman informasi — tapi bagian dari hidup kita setiap hari.</p>
+        </div>
+        </section>
+
+        <div class="funfact">Website pertama masih aktif sampai sekarang, bisa kamu kunjungi kapan pun!</div>
+
+        <div class="btn-area">
+            <a href="index.html#artikel" class="btn-back">Kembali ke Beranda</a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 ThinkLyttleStars</p>
+    </footer>
+
+</body>
+</html>

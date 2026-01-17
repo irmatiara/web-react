@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bahasa Pemrograman</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #021431;
+    color: #E5E5E5;
+}
+
+.navbar {
+    background: #2E4365; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0.9rem 0;
+}
+
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    height: 70px;
+}
+.nav-links {
+    display: flex;
+    gap: .8rem;
+    list-style: none;
+}
+.nav-links a {
+    color: #F3D58D;
+    padding: .4rem 1rem;
+    text-decoration: none;
+    border: 1px solid #F3D58D;
+    border-radius: 6px;
+}
+.nav-links a:hover {
+    background: #F3D58D;
+    color: #2E4365;
+}
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #F8CB2E;
+}
+
+.logo-header {
+    display: block;
+    margin: 0 auto 15px auto;
+    height: 80px;
+    width: auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #F8CB2E;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 25px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(248, 203, 46, 0.25);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: rgba(248, 203, 46, 0.08);
+    border-color: #F8CB2E;
+}
+
+.card h2 {
+    color: #F8CB2E;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
+.card ul {
+    padding-left: 18px;
+    margin-top: 5px;
+}
+
+.fun-box {
+    background: #F8CB2E;
+    color: #021431;
+    padding: 18px;
+    border-radius: 15px;
+    margin-top: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btnKembali {
+    display: inline-block;
+    background-color: #021431;
+    color: #F8CB2E;
+    border: 2px solid #F8CB2E;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+.btnKembali:hover {
+    background-color: #F8CB2E;
+    color: #021431;
+}
+
+footer {
+    margin: 50px 0 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #F8CB2E;
+    opacity: 0.85;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html">
+                <img class="logo" src="assets/logo.svg" alt="ThinkLyttleStars">
+            </a>
+        </div>
+    </nav>
+<header>
+    <h1>Dunia Bahasa Pemrograman</h1>
+    <p class="tagline">Temukan karakter dan kekuatan unik dari setiap bahasa!</p>
+</header>
+
+<section class="container">
+    <div class="grid">
+
+        <div class="card">
+            <h2>Python</h2>
+            <p>Python adalah bahasa tinggi yang terkenal karena sintaksnya yang bersih dan mudah dipelajari. Cocok untuk pengembangan web, ilmu data, kecerdasan buatan, otomasi, dan scripting. Python memiliki ekosistem library yang kaya (seperti Pandas, NumPy, TensorFlow) sehingga sering menjadi pilihan utama dalam proyek data science dan machine learning.</p>
+            <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Google, NASA, Instagram, Spotify</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Mudah dipelajari, sangat produktif untuk prototyping, komunitas besar.</p>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>JavaScript adalah bahasa pemrograman utama untuk pengembangan web interaktif. Selain berjalan di browser, JavaScript juga digunakan di server (Node.js), mobile (React Native), dan desktop (Electron). Ekosistemnya sangat luas—dengan library dan framework seperti React, Vue, dan Angular.</p>
+            <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Facebook, Netflix, PayPal, dan hampir semua situs modern</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Interaktif, event-driven, ekosistem besar, serbaguna di client & server.</p>
+        </div>
+
+        <div class="card">
+            <h2>Java</h2>
+            <p>Java adalah bahasa serbaguna yang menekankan portabilitas dan keamanan. Banyak digunakan di aplikasi enterprise, backend server, dan Android. Java terkenal stabil dan memiliki performa yang baik untuk aplikasi berskala besar.</p>
+            <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Perbankan, perusahaan besar, aplikasi Android</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Stabil, berorientasi objek, ekosistem enterprise matang.</p>
+        </div>
+
+        <div class="card">
+            <h2>C# (C-Sharp)</h2>
+            <p>C# dikembangkan oleh Microsoft dan populer untuk aplikasi Windows, game (menggunakan Unity), dan layanan backend. Bahasa ini memiliki sintaks yang mirip dengan Java dan diperkaya dengan fitur modern yang memudahkan pemrograman berorientasi objek.</p>
+            <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Perusahaan pengembang perangkat lunak, studio game (Unity)</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Terintegrasi baik dengan ekosistem Microsoft, kuat untuk game dan aplikasi enterprise.</p>
+        </div>
+
+        <div class="card">
+            <h2>C++</h2>
+            <p>C++ adalah bahasa performa tinggi yang digunakan pada sistem operasi, game engine, dan aplikasi yang membutuhkan pengelolaan memori manual. Meskipun kompleks, C++ memberikan kontrol mendalam terhadap sumber daya dan kecepatan eksekusi.</p>
+            <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Perusahaan game, pengembang sistem, perangkat lunak performa tinggi</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Performa tinggi, kontrol tingkat rendah, luas dipakai di industri.</p>
+        </div>
+
+        <div class="card">
+            <h2>PHP</h2>
+            <p>PHP adalah bahasa scripting server-side yang banyak digunakan untuk membangun situs dinamis dan aplikasi web. Meskipun sering dikritik, PHP tetap sangat populer berkat kemudahan pemakaian dan dukungan platform seperti WordPress.</p>
+            <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Banyak situs web, WordPress, sistem manajemen konten</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Mudah di-hosting, banyak paket & CMS, komunitas luas.</p>
+        </div>
+
+        <div class="card">
+            <h2>Go (Golang)</h2>
+            <p>Go dikembangkan oleh Google untuk kebutuhan sistem berskala besar. Bahasa ini menonjolkan paralelisme, kecepatan, dan kesederhanaan sintaks. Cocok untuk layanan backend, microservices, dan aplikasi cloud-native.</p>
+            <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Perusahaan cloud, infrastruktur, proyek open-source</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Concurrency mudah, binary statis, cepat dan ringan.</p>
+        </div>
+
+        <div class="card">
+            <h2>Rust</h2>
+            <p>Rust terkenal akan keamanan memori tanpa garbage collector, performa tinggi, dan sistem tipe yang ketat. Bahasa ini ideal untuk aplikasi sistem, tools performa tinggi, dan proyek yang butuh keamanan memori.</p>
+           <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Proyek sistem, browser components (contoh: bagian dari Firefox), tooling</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Keamanan memori, modern, performa mendekati C++.</p>
+        </div>
+
+        <div class="card">
+            <h2>Swift</h2>
+            <p>Swift adalah bahasa modern yang dikembangkan oleh Apple untuk pengembangan aplikasi iOS, macOS, watchOS, dan tvOS. Swift menekankan kinerja, keamanan, dan sintaks yang bersih dibandingkan Objective-C.</p>
+            <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Pengembang aplikasi Apple ecosystem</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Modern, cepat, aman, mudah dipelajari oleh pengembang mobile.</p>
+        </div>
+
+        <div class="card">
+            <h2>Kotlin</h2>
+            <p>Kotlin adalah bahasa modern yang interoperable dengan Java dan kini menjadi bahasa resmi untuk pengembangan Android. Kotlin menawarkan sintaks lebih singkat, fitur safety, dan dukungan ekosistem yang kuat.</p>
+            <br>
+            <strong>Dipakai oleh:</strong>
+            <ul>
+                <li>Pengembang Android, perusahaan mobile</li>
+            </ul>
+            <br>
+            <strong>Kelebihan singkat:</strong>
+            <p>Interoperabilitas Java, sintaks ringkas, null-safety.</p>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="btnKembali">Kembali ke Beranda</a>
+
+    <div class="fun-box">
+        Fun Fact!<br>
+        Ada lebih dari 700 bahasa pemrograman di dunia! Mana yang akan jadi favoritmu?
+    </div>
+</section>
+
+<footer>
+    © 2025 - ThinkLyttleStars
+</footer>

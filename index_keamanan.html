@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keamanan di Dunia Internet</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #2E4365;
+            font-family: Arial, sans-serif;
+        }
+
+        /* --- NAVBAR --- */
+        nav {
+            background-color: #2E4365;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            height: 45px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #F3D58D;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- HERO --- */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            /* padding: 3rem 1rem; */
+            background: linear-gradient(135deg, #b7c2d2, #6e7f9f);
+            /* color: #F3D58D; */
+        }
+
+        .hero-text {
+            flex: 1 1 400px;
+            padding: 1rem 2rem;
+        }
+
+        .hero-text h1 {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .hero-illustration {
+            flex: 1 1 350px;
+            text-align: center;
+        }
+
+        .hero-illustration img {
+            width: 80%;
+            max-width: 350px;
+            height: auto;
+        }
+
+        /* --- SECTION CARDS --- */
+        .section {
+            max-width: 950px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            transition: 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-4px);
+        }
+
+        .section:nth-child(even) {
+            background-color: #fef7e5;
+        }
+
+        h2 {
+            color: #4b6183;
+            border-left: 6px solid #F3D58D;
+            padding-left: 10px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            line-height: 1.7;
+        }
+
+        ul li {
+            margin-bottom: 0.6rem;
+        }
+
+        .quote {
+            background-color: #2E4365;
+            color: #F3D58D;
+            padding: 1rem;
+            border-radius: 8px;
+            font-style: italic;
+            margin-top: 1.5rem;
+        }
+
+        .btnKembali {
+            display: inline-block;
+            background-color: #F3D58D;
+            color: #2E4365;
+            border: none;
+            padding: 0.8rem 1.6rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+            margin: 2rem auto;
+            display: block;
+            width: fit-content;
+        }
+
+        .btnKembali:hover {
+            background-color: #2E4365;
+            color: #F3D58D;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 1024px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem 1rem;
+            }
+
+            .hero-illustration {
+                order: -1;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-illustration img {
+                width: 85%;
+                max-width: 320px;
+            }
+
+            .hero-text {
+                padding: 0 1rem;
+            }
+        }
+
+        /* HP kecil */
+        @media (max-width: 480px) {
+            .hero-illustration img {
+                max-width: 250px;
+            }
+
+            .hero-text h1 {
+                font-size: 1.6rem;
+            }
+
+            .hero-text p {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Desktop besar */
+        @media (min-width: 1200px) {
+            .hero-illustration img {
+                max-width: 460px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html"><img class="logo" src="assets/logo.svg" alt="Logo ThinkLyttleStars"></a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Keamanan di Dunia Internet</h1>
+            <p>Menjelajahi dunia digital dengan aman dan bijak agar data pribadi tetap terlindungi dari ancaman siber.</p>
+        </div>
+        <div class="hero-illustration">
+            <img src="assets/logocyber.png" alt="Ilustrasi Keamanan Internet">
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>1. Dunia Digital : Ruang Tanpa Batas</h2>
+        <p>
+            Internet membuka peluang besar bagi manusia untuk belajar, berinteraksi, dan berkarya.
+            Namun kebebasan ini juga disertai risiko, seperti pencurian data dan penyalahgunaan informasi pribadi.
+            Menjaga keamanan digital berarti melindungi identitas diri di ruang yang tak terbatas ini.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>2. Ancaman yang Mengintai</h2>
+        <ul>
+            <li><b>Phishing :</b> Penipuan dengan menyamar sebagai pihak terpercaya untuk mencuri data login.</li>
+            <li><b>Malware :</b> Program berbahaya yang bisa mencuri atau merusak file pengguna.</li>
+            <li><b>Ransomware :</b> Jenis malware yang mengunci data dan meminta tebusan.</li>
+            <li><b>Social Engineering :</b> Manipulasi psikologis agar korban memberikan informasi penting.</li>
+        </ul>
+        <div class="quote">“Keamanan internet tidak datang dari perangkat, tetapi dari kesadaran penggunanya.”</div>
+    </section>
+
+    <section class="section">
+        <h2>3. Langkah Praktis untuk Tetap Aman</h2>
+        <ul>
+            <li>Gunakan <b>password</b> kuat dan aktifkan autentikasi dua langkah.</li>
+            <li>Perbarui sistem dan aplikasi secara rutin.</li>
+            <li>Gunakan antivirus atau firewall untuk melindungi perangkatmu.</li>
+            <li>Hindari membagikan data pribadi di media sosial.</li>
+            <li>Selalu verifikasi sumber sebelum mengklik tautan atau mengunduh file.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>4. Membangun Kesadaran Digital</h2>
+        <p>
+            Keamanan digital bukan hanya tentang teknologi, tetapi juga tentang pola pikir.
+            Biasakan berpikir kritis, tidak mudah percaya pada informasi yang belum pasti,
+            dan selalu periksa privasi akunmu secara berkala.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>5. Penutup</h2>
+        <p>
+            Internet adalah tempat yang menakjubkan selama kita tahu cara menjaganya.
+            Dengan keamanan digital yang baik, kita tidak hanya melindungi diri sendiri,
+            tetapi juga membantu menciptakan lingkungan online yang lebih aman dan positif.
+        </p>
+        <a href="index.html" class="btnKembali">Kembali ke Beranda</a>
+    </section>
+
+    <footer>
+        © 2025 ThinkLyttleStars.
+    </footer>
+</body>
+
+</html>
