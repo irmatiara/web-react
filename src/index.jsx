@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import './App.css'
+import { Link } from 'react-router-dom'
 
 function Home() {
 	return (
@@ -38,7 +37,7 @@ function Home() {
 						<div className="card-body">
 							<h3>Apa Itu Artificial Intelligence?</h3>
 							<p>Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi inimengubah dunia.</p>
-							<a href="index_ai.html" className="btn-outline">Baca Selengkapnya</a>
+							<Link to="/ai" className="btn-outline">Baca Selengkapnya</Link>
 						</div>
 					</div>
 					<div className="card">
