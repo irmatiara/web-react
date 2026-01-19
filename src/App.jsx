@@ -1,145 +1,88 @@
-import { useState } from "react"
-import "./style.css"
+import { useState } from 'react'
+import './App.css'
 
-function Artikel() {
-  const [menuAktif, setMenuAktif] = useState(false)
-
-  function toggleMenu() {
-    setMenuAktif(!menuAktif)
-  }
-
-  return (
-    <>
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="container">
-          <img className="logo" src="assets/logo.svg" alt="logo" />
-
-          <div className="burger-menu" onClick={toggleMenu}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
-
-          <ul className={`nav-links ${menuAktif ? "active" : ""}`}>
-            <li><a href="/">Beranda</a></li>
-            <li><a href="/artikel" className="active">Artikel</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/#kontak">Kontak</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      {/* Section Artikel */}
-      <section id="artikel" className="section">
-        <h2>Artikel Populer</h2>
-        <p style={{ maxWidth: "800px", margin: "0 auto 50px", lineHeight: "1.6" }}>
-          Temukan berbagai artikel menarik seputar teknologi, pemrograman, dan perkembangan dunia digital.
-          Mulai dari pengenalan Artificial Intelligence hingga panduan belajar bahasa pemrograman populer
-          seperti Python, JavaScript, dan HTML. Cocok untuk kamu yang ingin memperluas wawasan di era digital!
-        </p>
-
-        <div className="card-grid">
-          {dataArtikel.map((item, index) => (
-            <div className="card" key={index}>
-              <img src={item.gambar} alt={item.judul} />
-              <div className="card-body">
-                <h3>{item.judul}</h3>
-                <p>{item.deskripsi}</p>
-                <a href={item.link} className="btn-outline">Baca Selengkapnya</a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 ThinkLyttleStars.</p>
-      </footer>
-    </>
-  )
+function App() {
+	return (
+		<>
+			<nav className="navbar">
+				<div className="container">
+					<img className="logo" src="/assets/logo.svg" alt="" srcSet="" />
+					<div className="burger-menu">
+						<div className="bar" />
+						<div className="bar" />
+						<div className="bar" />
+					</div>
+					<ul className="nav-links">
+						<li><a href="index.html" className="active">Beranda</a></li>
+						<li><a href="artikel.html">Artikel</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="index.html#kontak">Kontak</a></li>
+					</ul>
+				</div>
+			</nav>
+			<section className="hero">
+				<img src="/assets/1.png" alt="" srcSet="" />
+				<div className="hero-content">
+					<h1>Belajar Teknologi Jadi Mudah</h1>
+					<p>
+						ThinkLyttleStars adalah ruang belajar yang sederhana dan ramah, di mana setiap artikel membantu kamu memahami dunia digital dengan cara yang ringan. 
+						Nggak perlu waktu lama, cukup luangkan beberapa menit untuk membaca dan kamu akan mendapat wawasan baru yang bermanfaat untuk keseharianmu.
+					</p>
+				</div>
+			</section>
+			<section id="artikel" className="section">
+				<h2 style={{ paddingBottom: 30 }}>Artikel Populer</h2>
+				<div className="card-grid">
+					<div className="card">
+						<img src="/assets/ai (2).jfif" alt="AI" />
+						<div className="card-body">
+							<h3>Apa Itu Artificial Intelligence?</h3>
+							<p>Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi inimengubah dunia.</p>
+							<a href="index_ai.html" className="btn-outline">Baca Selengkapnya</a>
+						</div>
+					</div>
+					<div className="card">
+						<img src="/assets/html.jfif" alt="Coding" />
+						<div className="card-body">
+							<h3>Mengenal HTML</h3>
+							<p>Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.</p>
+							<a href="index_html.html" className="btn-outline">Baca Selengkapnya</a>
+						</div>
+					</div>
+					<div className="card">
+						<img src="/assets/internet.jfif" alt="Internet" />
+						<div className="card-body">
+							<h3>Bagaimana Internet Bekerja?</h3>
+							<p>Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!</p>
+							<a href="index_internet.html" className="btn-outline">Baca Selengkapnya</a>
+						</div>
+					</div>
+					<a href="artikel.html" className="btn-outline" style={{ marginLeft: "auto", display: "block", width: "fit-content" }}>Artikel Lainnya</a>
+				</div>
+			</section>
+			<section id="kontak" className="section">
+				<h2>Contact Us</h2>
+				<form name="contact-form" style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 15}}>
+					<div style={{display: "flex", alignItems: "center", justifyContent: "space-between", width: 400}}>
+						<label htmlFor="name" style={{ fontSize: "1.1rem" }}>Nama Lengkap</label>
+						<input type="text" id="name" name="nama" style={{width: 250, padding: "8px 10px", border: "1px solid #ccc", borderRadius: 4, fontSize: "1rem"}}/>
+					</div>
+					<div style={{display: "flex", alignItems: "center", justifyContent: "space-between", width: 400}}>
+						<label htmlFor="email" style={{ fontSize: "1.1rem" }}>Email</label>
+						<input type="email" id="email" name="email" style={{width: 250, padding: "8px 10px", border: "1px solid #ccc", borderRadius: 4, fontSize: "1rem"}}/>
+					</div>
+					<div style={{display: "flex", alignItems: "center", justifyContent: "space-between", width: 400}}>
+						<label htmlFor="pesan" style={{ fontSize: "1.1rem" }}>Pesan</label>
+						<textarea id="pesan" name="pesan" rows={3} style={{width: 250, padding: "8px 10px", border: "1px solid #ccc", borderRadius: 4, fontSize: "1rem", resize: "none"}} defaultValue={""}/>
+					</div>
+					<button type="submit" className="btn-primary">Kirim</button>
+				</form>
+			</section>
+			<footer className="footer">
+				<p>© 2025 ThinkLyttleStars.</p>
+			</footer>
+		</>
+	)
 }
 
-export default Artikel
-
-const dataArtikel = [
-  {
-    judul: "Apa Itu Artificial Intelligence?",
-    deskripsi: "Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi ini mengubah dunia.",
-    gambar: "assets/ai (2).jfif",
-    link: "/index_ai"
-  },
-  {
-    judul: "Mengenal HTML",
-    deskripsi: "Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.",
-    gambar: "assets/html.jfif",
-    link: "/index_html"
-  },
-  {
-    judul: "Bagaimana Internet Bekerja?",
-    deskripsi: "Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!",
-    gambar: "assets/internet.jfif",
-    link: "/index_internet"
-  },
-  {
-    judul: "Mengenal Python lebih dalam",
-    deskripsi: "Mengapa Python menjadi pilihan favorit para pengembang dalam teknologi modern di seluruh dunia.",
-    gambar: "assets/py.jfif",
-    link: "/index_python"
-  },
-  {
-    judul: "JavaScript itu apa sih?",
-    deskripsi: "Kuasai bahasa pemrograman web paling populer untuk membuat halaman kamu menjadi interaktif.",
-    gambar: "assets/java.jfif",
-    link: "/index_javascript"
-  },
-  {
-    judul: "Langkah Awal Belajar Data Science",
-    deskripsi: "Mengenali keterampilan dasar data science sebelum memulai.",
-    gambar: "assets/dtsains.jfif",
-    link: "/index_data"
-  },
-  {
-    judul: "Keamanan di Dunia Internet",
-    deskripsi: "Menjaga keamanan bukan hanya tanggung jawab perusahaan, tapi juga user.",
-    gambar: "assets/cyberinternet.jfif",
-    link: "/index_keamanan"
-  },
-  {
-    judul: "Algoritma Dalam Kehidupan Sehari-hari",
-    deskripsi: "Setiap kegiatan bisa dilakukan dengan algoritma.",
-    gambar: "assets/algoritma.jfif",
-    link: "/index_algoritma"
-  },
-  {
-    judul: "Desain Grafis",
-    deskripsi: "Seni komunikasi visual yang menarik.",
-    gambar: "assets/desain.jfif",
-    link: "/index_desaingrafis"
-  },
-  {
-    judul: "Komponen Utama IoT",
-    deskripsi: "Bagian penting IoT agar perangkat bisa bertukar data.",
-    gambar: "assets/IOT.jfif",
-    link: "/index_IOT"
-  },
-  {
-    judul: "Mengenal UI/UX",
-    deskripsi: "Menciptakan tampilan menarik & nyaman.",
-    gambar: "assets/uiux.jfif",
-    link: "/index_uiux"
-  },
-  {
-    judul: "Jenis Bahasa Pemrograman",
-    deskripsi: "Pelajari berbagai bahasa pemrograman.",
-    gambar: "assets/program.jfif",
-    link: "/index_bprogram"
-  },
-  {
-    judul: "Perjalanan Website",
-    deskripsi: "Sejarah lahirnya web.",
-    gambar: "assets/web.jfif",
-    link: "/index_web"
-  }
-]
+export default App
