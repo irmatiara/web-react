@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react"
+import { useState } from "react";
 
 export default function About() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,9 +35,9 @@ export default function About() {
           <h2>Tentang ThinkLyttleStars</h2>
           <p>
             Nama <i>ThinkLyttelStars</i> berasal dari kata <i>think</i> (berpikir)
-            dan <i>little stars</i> (bintang-bintang kecil).  
+            dan <i>little stars</i> (bintang-bintang kecil).
             Karena kami percaya bahwa setiap pemikiran kecil bisa tumbuh menjadi
-            cahaya besar yang menerangi dunia.  
+            cahaya besar yang menerangi dunia.
             Tempat di mana setiap bintang kecil belajar untuk bersinar lebih terang 🌟.
             <br /><br />
             Mari berjalan bersama kami. Temukan cahaya kecilmu. Belajarlah perlahan,
@@ -49,7 +49,10 @@ export default function About() {
       </div>
 
       {/* Tentang 2 */}
-      <div id="tentang2" style={{ padding: "60px 80px", backgroundColor: "#fdfaf6" }}>
+      <div
+        id="tentang2"
+        style={{ padding: "60px 80px", backgroundColor: "#fdfaf6" }}
+      >
         <table style={{ width: "100%", marginLeft: "40px" }}>
           <tbody>
             <tr>
@@ -64,23 +67,27 @@ export default function About() {
                       {
                         icon: "fa-house",
                         title: "Ruang Belajar Menenangkan",
-                        desc: "Tempat di mana setiap bintang kecil bisa berhenti sejenak dan belajar."
+                        desc:
+                          "Tempat di mana setiap bintang kecil bisa berhenti sejenak dan belajar.",
                       },
                       {
                         icon: "fa-laptop-code",
                         title: "Edukasi Teknologi Menyenangkan",
-                        desc: "Belajar dunia digital dengan cara sederhana."
+                        desc:
+                          "Belajar dunia digital dengan cara sederhana.",
                       },
                       {
                         icon: "fa-lightbulb",
                         title: "Menghargai Potensi Unik",
-                        desc: "Setiap ide dan proses belajar itu berarti."
+                        desc:
+                          "Setiap ide dan proses belajar itu berarti.",
                       },
                       {
                         icon: "fa-person-rays",
                         title: "Bersinar Bersama",
-                        desc: "Belajar perlahan dan bertumbuh bersama."
-                      }
+                        desc:
+                          "Belajar perlahan dan bertumbuh bersama.",
+                      },
                     ].map((item, i) => (
                       <tr key={i}>
                         <td style={{ width: "60px", textAlign: "center" }}>
@@ -93,7 +100,7 @@ export default function About() {
                               borderRadius: "50%",
                               display: "flex",
                               alignItems: "center",
-                              justifyContent: "center"
+                              justifyContent: "center",
                             }}
                           >
                             <i className={`fa-solid ${item.icon}`}></i>
@@ -121,7 +128,7 @@ export default function About() {
       <div id="tentang" className="light-bg">
         <div className="section-tentang">
           <p>
-            ThinkLyttelStars hadir sebagai ruang kecil yang menenangkan.  
+            ThinkLyttelStars hadir sebagai ruang kecil yang menenangkan.
             Platform edukasi teknologi yang sederhana, hangat, dan manusiawi.
             <br /><br />
             Kami percaya belajar bukan tekanan, tapi perjalanan lembut menuju
@@ -130,7 +137,11 @@ export default function About() {
         </div>
         <img src="assets/4.png" alt="Ilustrasi" />
       </div>
-        <Link to="/" className="btnKembali">Kembali ke Beranda</Link>
+
+      <Link to="/" className="btnKembali">
+        Kembali ke Beranda
+      </Link>
+
       {/* Footer */}
       <footer className="footer">
         <p>© 2025 ThinkLyttleStars.</p>
