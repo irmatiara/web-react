@@ -20,7 +20,14 @@ function Artikel() {
             <div className="bar"></div>
             <div className="bar"></div>
           </div>
-
+          <ul className={`nav-links ${menuAktif ? "active" : ""}`}>
+            <li><Link to="/">Beranda</Link></li>
+            <li><Link to="/ai">AI</Link></li>
+            <li><Link to="/html">HTML</Link></li>
+            <li><Link to="/internet">Internet</Link></li>
+            <li><Link to="/algo">Algoritma</Link></li>
+            <li><Link to="/uiux">UI/UX</Link></li>
+          </ul>
 
         </div>
       </nav>
@@ -30,26 +37,179 @@ function Artikel() {
         <h2>Artikel Populer</h2>
 
         <div className="card-grid">
-          {dataArtikel.map((item, index) => (
-            <div className="card" key={index}>
-              <img src={item.gambar} alt={item.judul} />
+          <div className="card">
+            <img src="assets/ai (2).jfif" alt="Apa Itu Artificial Intelligence?" />
 
-              <div className="card-body">
-                <h3>{item.judul}</h3>
-                <p>{item.deskripsi}</p>
+            <div className="card-body">
+              <h3>Apa Itu Artificial Intelligence?</h3>
+              <p>Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi ini mengubah dunia.</p>
 
-                {/* LINK ROUTER */}
-                <Link to={item.link} className="btn-outline">
-                  Baca Selengkapnya
-                </Link>
-
-              </div>
+              <Link to="/index_ai" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
             </div>
-          ))}
+          </div>
+
+          <div className="card">
+            <img src="assets/html.jfif" alt="Mengenal HTML" />
+
+            <div className="card-body">
+              <h3>Mengenal HTML</h3>
+              <p>Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.</p>
+
+              <Link to="/index_html" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/internet.jfif" alt="Bagaimana Internet Bekerja?" />
+
+            <div className="card-body">
+              <h3>Bagaimana Internet Bekerja?</h3>
+              <p>Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!</p>
+
+              <Link to="/index_internet" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/py.jfif" alt="Mengenal Python lebih dalam" />
+
+            <div className="card-body">
+              <h3>Mengenal Python lebih dalam</h3>
+              <p>Mengapa Python menjadi pilihan favorit para pengembang dalam teknologi modern di seluruh dunia.</p>
+
+              <Link to="/index_python" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/java.jfif" alt="JavaScript itu apa sih?" />
+
+            <div className="card-body">
+              <h3>JavaScript itu apa sih?</h3>
+              <p>Kuasai bahasa pemrograman web paling populer untuk membuat halaman kamu menjadi interaktif.</p>
+
+              <Link to="/index_javascript" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/dtsains.jfif" alt="Langkah Awal Belajar Data Science" />
+
+            <div className="card-body">
+              <h3>Langkah Awal Belajar Data Science</h3>
+              <p>Mengenali keterampilan dasar data science sebelum memulai.</p>
+
+              <Link to="/index_data" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/cyberinternet.jfif" alt="Keamanan di Dunia Internet" />
+
+            <div className="card-body">
+              <h3>Keamanan di Dunia Internet</h3>
+              <p>Menjaga keamanan bukan hanya tanggung jawab perusahaan, tapi juga user.</p>
+
+              <Link to="/index_keamanan" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/algoritma.jfif" alt="Algoritma Dalam Kehidupan Sehari-hari" />
+
+            <div className="card-body">
+              <h3>Algoritma Dalam Kehidupan Sehari-hari</h3>
+              <p>Setiap kegiatan bisa dilakukan dengan algoritma.</p>
+
+              <Link to="/index_algoritma" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/desain.jfif" alt="Desain Grafis" />
+
+            <div className="card-body">
+              <h3>Desain Grafis</h3>
+              <p>Seni komunikasi visual yang menarik.</p>
+
+              <Link to="/index_desaingrafis" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/IOT.jfif" alt="Komponen Utama IoT" />
+
+            <div className="card-body">
+              <h3>Komponen Utama IoT</h3>
+              <p>Bagian penting IoT agar perangkat bisa bertukar data.</p>
+
+              <Link to="/index_IOT" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/uiux.jfif" alt="Mengenal UI/UX" />
+
+            <div className="card-body">
+              <h3>Mengenal UI/UX</h3>
+              <p>Menciptakan tampilan menarik & nyaman.</p>
+
+              <Link to="/index_uiux" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/program.jfif" alt="Jenis Bahasa Pemrograman" />
+
+            <div className="card-body">
+              <h3>Jenis Bahasa Pemrograman</h3>
+              <p>Pelajari berbagai bahasa pemrograman.</p>
+
+              <Link to="/index_bprogram" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src="assets/web.jfif" alt="Perjalanan Website" />
+
+            <div className="card-body">
+              <h3>Perjalanan Website</h3>
+              <p>Sejarah lahirnya web.</p>
+
+              <Link to="/index_web" className="btn-outline">
+                Baca Selengkapnya
+              </Link>
+            </div>
+          </div>
         </div>
+
         <Link to="/" className="btnKembali">
-            Kembali ke Beranda
-          </Link>
+          Kembali ke Beranda
+        </Link>
       </section>
 
       <footer className="footer">
@@ -60,85 +220,3 @@ function Artikel() {
 }
 
 export default Artikel
-
-const dataArtikel = [
-  {
-    judul: "Apa Itu Artificial Intelligence?",
-    deskripsi: "Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi ini mengubah dunia.",
-    gambar: "assets/ai (2).jfif",
-    link: "/index_ai"
-  },
-  {
-    judul: "Mengenal HTML",
-    deskripsi: "Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.",
-    gambar: "assets/html.jfif",
-    link: "/index_html"
-  },
-  {
-    judul: "Bagaimana Internet Bekerja?",
-    deskripsi: "Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!",
-    gambar: "assets/internet.jfif",
-    link: "/index_internet"
-  },
-  {
-    judul: "Mengenal Python lebih dalam",
-    deskripsi: "Mengapa Python menjadi pilihan favorit para pengembang dalam teknologi modern di seluruh dunia.",
-    gambar: "assets/py.jfif",
-    link: "/index_python"
-  },
-  {
-    judul: "JavaScript itu apa sih?",
-    deskripsi: "Kuasai bahasa pemrograman web paling populer untuk membuat halaman kamu menjadi interaktif.",
-    gambar: "assets/java.jfif",
-    link: "/index_javascript"
-  },
-  {
-    judul: "Langkah Awal Belajar Data Science",
-    deskripsi: "Mengenali keterampilan dasar data science sebelum memulai.",
-    gambar: "assets/dtsains.jfif",
-    link: "/index_data"
-  },
-  {
-    judul: "Keamanan di Dunia Internet",
-    deskripsi: "Menjaga keamanan bukan hanya tanggung jawab perusahaan, tapi juga user.",
-    gambar: "assets/cyberinternet.jfif",
-    link: "/index_keamanan"
-  },
-  {
-    judul: "Algoritma Dalam Kehidupan Sehari-hari",
-    deskripsi: "Setiap kegiatan bisa dilakukan dengan algoritma.",
-    gambar: "assets/algoritma.jfif",
-    link: "/index_algoritma"
-  },
-  {
-    judul: "Desain Grafis",
-    deskripsi: "Seni komunikasi visual yang menarik.",
-    gambar: "assets/desain.jfif",
-    link: "/index_desaingrafis"
-  },
-  {
-    judul: "Komponen Utama IoT",
-    deskripsi: "Bagian penting IoT agar perangkat bisa bertukar data.",
-    gambar: "assets/IOT.jfif",
-    link: "/index_IOT"
-  },
-  {
-    judul: "Mengenal UI/UX",
-    deskripsi: "Menciptakan tampilan menarik & nyaman.",
-    gambar: "assets/uiux.jfif",
-    link: "/index_uiux"
-  },
-  {
-    judul: "Jenis Bahasa Pemrograman",
-    deskripsi: "Pelajari berbagai bahasa pemrograman.",
-    gambar: "assets/program.jfif",
-    link: "/index_bprogram"
-  },
-  {
-    judul: "Perjalanan Website",
-    deskripsi: "Sejarah lahirnya web.",
-    gambar: "assets/web.jfif",
-    link: "/index_web"
-  }
-]
-
