@@ -1,126 +1,27 @@
-<!DOCTYPE html>
-<html lang="id">
+import { Link } from "react-router-dom";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bagaimana Internet Bekerja?</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .materi-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background-color: #f8f9fa;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
+export default function MateriInternet() {
+  return (
+    <>
+        <nav className="navbar">
+            <div className="container">
+                <Link to="/">
+                <img 
+                className="logo" 
+                src="assets/logo.svg" 
+                alt="Logo ThinkLyttleStars" />
+                </Link>
+                </div>
+        </nav>
 
-        .materi-container h2 {
-            color: #2E4365;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #F3D58D;
-            padding-bottom: 0.3rem;
-        }
+            <section className="hero">
+                <div className="hero-content">
+                    <h1>Bagaimana Internet Bekerja?</h1>
+                    <p>Memahami perjalanan data dari perangkatmu hingga ke seluruh dunia.</p>
+                </div>
+            </section>
 
-        .materi-container p {
-            text-align: justify;
-            margin-bottom: 1.2rem;
-            line-height: 1.7;
-            color: #333;
-        }
-
-        .materi-container ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .materi-container ul li {
-            margin-bottom: 0.6rem;
-            list-style-type: square;
-            color: #2E4365;
-        }
-
-        blockquote {
-            border-left: 4px solid #F3D58D;
-            padding-left: 1rem;
-            color: #555;
-            font-style: italic;
-            margin: 1rem 0 1.5rem 0;
-        }
-
-        .fact-box {
-            background-color: #2E4365;
-            color: #F3D58D;
-            padding: 1rem;
-            border-radius: 10px;
-            margin: 1.5rem 0;
-            font-weight: 500;
-        }
-
-        .timeline {
-            border-left: 3px solid #F3D58D;
-            padding-left: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .timeline li {
-            margin-bottom: 1rem;
-            position: relative;
-        }
-
-        .timeline li::before {
-            content: "";
-            position: absolute;
-            left: -9px;
-            top: 5px;
-            width: 10px;
-            height: 10px;
-            background-color: #F3D58D;
-            border-radius: 50%;
-        }
-
-        .btnKembali {
-            display: inline-block;
-            background-color: #F3D58D;
-            color: #2E4365;
-            border: none;
-            padding: 0.7rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: 0.3s;
-            margin-top: 1rem;
-        }
-
-        .btnKembali:hover {
-            background-color: #2E4365;
-            color: #F3D58D;
-        }
-
-        @media (max-width: 600px) {
-            .materi-container {
-                padding: 1rem;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html"><img class="logo" src="assets/logo.svg" alt="Logo ThinkLyttleStars"></a>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bagaimana Internet Bekerja?</h1>
-            <p>Memahami perjalanan data dari perangkatmu hingga ke seluruh dunia.</p>
-        </div>
-    </section>
-
-    <section class="materi-container">
+    <section className="materi-container">
         <h2>Pengenalan Internet</h2>
         <p>
             Internet adalah jaringan global yang menghubungkan jutaan komputer, server, dan perangkat lainnya di seluruh dunia. 
@@ -136,7 +37,7 @@
             Awal 1980-an, TCP/IP menjadi standar komunikasi, memungkinkan pertumbuhan jaringan global. 
             Tahun 1990-an, World Wide Web (WWW) diperkenalkan oleh Tim Berners-Lee, membuat internet lebih mudah diakses oleh masyarakat luas.
         </p>
-        <div class="fact-box">
+        <div className="fact-box">
             Fakta Menarik: Pada 1993, browser pertama yang populer, Mosaic, membuat internet mulai dikenal oleh masyarakat umum.
         </div>
 
@@ -188,12 +89,15 @@
             Masa depan internet meliputi akses lebih cepat, koneksi global lebih merata, dan integrasi AI untuk meningkatkan pengalaman pengguna.
         </p>
 
-        <a href="index.html" class="btnKembali">Kembali ke Beranda</a>
+        <Link to="/" 
+        className="btnKembali">
+        Kembali ke Beranda
+        </Link>
     </section>
 
-    <footer class="footer">
+    <footer className="footer">
         <p>© 2025 ThinkLyttleStars. Semua hak dilindungi.</p>
     </footer>
-</body>
-
-</html>
+</>
+);
+}

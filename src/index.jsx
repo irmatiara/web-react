@@ -45,7 +45,7 @@ function Home() {
 						<div className="card-body">
 							<h3>Mengenal HTML</h3>
 							<p>Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.</p>
-							<a href="index_html.html" className="btn-outline">Baca Selengkapnya</a>
+							<Link to="/html" className="btn-outline">Baca Selengkapnya</Link>
 						</div>
 					</div>
 					<div className="card">
@@ -53,7 +53,7 @@ function Home() {
 						<div className="card-body">
 							<h3>Bagaimana Internet Bekerja?</h3>
 							<p>Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!</p>
-							<a href="index_internet.html" className="btn-outline">Baca Selengkapnya</a>
+							<Link to="/internet" className="btn-outline">Baca Selengkapnya</Link>
 						</div>
 					</div>
 					<a href="artikel.html" className="btn-outline" style={{ marginLeft: "auto", display: "block", width: "fit-content" }}>Artikel Lainnya</a>
