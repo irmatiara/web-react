@@ -4,8 +4,7 @@ import Home from './index.jsx';
 import MateriAi from './MateriAi.jsx';
 import MateriHtml from './MateriHtml.jsx';
 import MateriInternet from './MateriInternet.jsx';
-import MateriAlgo from './MateriAlgo.jsx';
-import MateriUiux from './MateriUiUx.jsx';
+import NotFound from './NotFound.jsx';
 import Artikel from './artikel.jsx';
 
 function App() {
@@ -15,8 +14,7 @@ function App() {
 			<Route path="/ai" element={<MateriAi />} />
 			<Route path="/html" element={<MateriHtml />} />
 			<Route path="/internet" element={<MateriInternet />} />
-			<Route path="/algo" element={<MateriAlgo />} />
-			<Route path="/uiux" element={<MateriUiux />} />
+			<Route path="/algo" element={<NotFound />} />
 			<Route path="/artikel" element={<Artikel />} />
 		</Routes>
 	);

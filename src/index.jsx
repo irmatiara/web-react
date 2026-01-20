@@ -77,7 +77,7 @@ function Home() {
 							<Link to="/internet" className="btn-outline">Baca Selengkapnya</Link>
 						</div>
 					</div>
-					<a href="artikel.html" className="btn-outline" style={{ marginLeft: 'auto', display: 'block', width: 'fit-content' }}>Artikel Lainnya</a>
+					<Link to="/artikel" className="btn-outline" style={{ marginLeft: 'auto', display: 'block', width: 'fit-content' }}>Artikel Lainnya</Link>
 				</div>
 			</section>
 
