@@ -12,8 +12,8 @@ function Home() {
 						<div className="bar" />
 					</div>
 					<ul className="nav-links">
-						<li><a href="index.html" className="active">Beranda</a></li>
-						<li><a href="artikel.html">Artikel</a></li>
+						<li><Link to="/" className="active">Beranda</Link></li>
+						<li><Link to="/artikel">Artikel</Link></li>
 						<li><a href="about.html">About Us</a></li>
 						<li><a href="index.html#kontak">Kontak</a></li>
 					</ul>
