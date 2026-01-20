@@ -22,11 +22,8 @@ function Artikel() {
           </div>
           <ul className={`nav-links ${menuAktif ? "active" : ""}`}>
             <li><Link to="/">Beranda</Link></li>
-            <li><Link to="/ai">AI</Link></li>
-            <li><Link to="/html">HTML</Link></li>
-            <li><Link to="/internet">Internet</Link></li>
-            <li><Link to="/algo">Algoritma</Link></li>
-            <li><Link to="/uiux">UI/UX</Link></li>
+            <li><a href="about.html">About Us</a></li>
+						<li><a href="index.html#kontak">Kontak</a></li>
           </ul>
 
         </div>
@@ -35,6 +32,11 @@ function Artikel() {
       {/* Section Artikel */}
       <section id="artikel" className="section">
         <h2>Artikel Populer</h2>
+        <p style={{ maxWidth: '800px', margin: '0 auto', marginBottom: '50px', lineHeight: '1.6' }}>
+            Temukan berbagai artikel menarik seputar teknologi, pemrograman, dan perkembangan dunia digital.
+            Mulai dari pengenalan Artificial Intelligence hingga panduan belajar bahasa pemrograman populer
+            seperti Python, JavaScript, dan HTML. Cocok untuk kamu yang ingin memperluas wawasan di era digital!
+        </p>
 
         <div className="card-grid">
           <div className="card">
