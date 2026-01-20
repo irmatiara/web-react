@@ -4,6 +4,7 @@ import Home from './index.jsx';
 import MateriAi from './MateriAi.jsx';
 import MateriHtml from './MateriHtml.jsx';
 import MateriInternet from './MateriInternet.jsx';
+import Artikel from './artikel.jsx';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Route path="/ai" element={<MateriAi />} />
 			<Route path="/html" element={<MateriHtml />} />
 			<Route path="/internet" element={<MateriInternet />} />
+			<Route path="/artikel" element={<Artikel />} />
 		</Routes>
 	);
 }
