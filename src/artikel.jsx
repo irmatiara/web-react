@@ -21,10 +21,7 @@ function Artikel() {
             <div className="bar"></div>
           </div>
 
-          {/* TOMBOL KEMBALI */}
-          <Link to="/" className="btnKembali">
-            Kembali ke Beranda
-          </Link>
+
         </div>
       </nav>
 
@@ -50,6 +47,9 @@ function Artikel() {
             </div>
           ))}
         </div>
+        <Link to="/" className="btnKembali">
+            Kembali ke Beranda
+          </Link>
       </section>
 
       <footer className="footer">
