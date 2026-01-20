@@ -7,6 +7,7 @@ import MateriInternet from './MateriInternet.jsx';
 import MateriAlgo from './MateriAlgo.jsx';
 import MateriUiux from './MateriUiUx.jsx';
 import Artikel from './artikel.jsx';
+import About from './About.jsx';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 			<Route path="/algo" element={<MateriAlgo />} />
 			<Route path="/uiux" element={<MateriUiux />} />
 			<Route path="/artikel" element={<Artikel />} />
+			<Route path="/about" element={<About/>} />
 		</Routes>
 	);
 }
