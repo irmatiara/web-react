@@ -21,7 +21,9 @@ function Artikel() {
             <div className="bar"></div>
           </div>
           <ul className={`nav-links ${menuAktif ? "active" : ""}`}>
-            <li><Link to="/">Beranda</Link></li>
+            <Link to="/" className="btnKembali">
+          Beranda
+        </Link>
             <li><Link to="/artikel">Artikel</Link></li>
             <li><a href="about.html">About Us</a></li>
 						<li><a href="index.html#kontak">Kontak</a></li>
@@ -210,9 +212,7 @@ function Artikel() {
           </div>
         </div>
 
-        <Link to="/" className="btnKembali">
-          Kembali ke Beranda
-        </Link>
+        
       </section>
 
       <footer className="footer">
