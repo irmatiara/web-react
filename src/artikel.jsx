@@ -22,6 +22,7 @@ function Artikel() {
           </div>
           <ul className={`nav-links ${menuAktif ? "active" : ""}`}>
             <li><Link to="/">Beranda</Link></li>
+            <li><Link to="/artikel">Artikel</Link></li>
             <li><a href="about.html">About Us</a></li>
 						<li><a href="index.html#kontak">Kontak</a></li>
           </ul>
