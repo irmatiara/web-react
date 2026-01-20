@@ -130,7 +130,7 @@ export default function About() {
         </div>
         <img src="assets/4.png" alt="Ilustrasi" />
       </div>
-
+        <Link to="/" className="btnKembali">Kembali ke Beranda</Link>
       {/* Footer */}
       <footer className="footer">
         <p>© 2025 ThinkLyttleStars.</p>
