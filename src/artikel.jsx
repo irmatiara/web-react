@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react"
 import "./style.css"
 
@@ -21,50 +22,37 @@ function Artikel() {
             <div className="bar"></div>
           </div>
 
-          <ul className={`nav-links ${menuAktif ? "active" : ""}`}>
-            <li>
-              <Link to="/" className="btnKembali">Kembali ke Beranda</Link>
-            </li>
-
-            <li>
-              <Link to="/artikel" className="active">Artikel</Link>
-            </li>
-
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
-
-            <li>
-              <Link to="/#kontak">Kontak</Link>
-            </li>
-          </ul>
+          {/* TOMBOL KEMBALI */}
+          <Link to="/" className="btnKembali">
+            Kembali ke Beranda
+          </Link>
         </div>
       </nav>
 
       {/* Section Artikel */}
       <section id="artikel" className="section">
         <h2>Artikel Populer</h2>
-        <p style={{ maxWidth: "800px", margin: "0 auto 50px", lineHeight: "1.6" }}>
-          Temukan berbagai artikel menarik seputar teknologi, pemrograman, dan perkembangan dunia digital.
-          Mulai dari pengenalan Artificial Intelligence hingga panduan belajar bahasa pemrograman populer
-          seperti Python, JavaScript, dan HTML. Cocok untuk kamu yang ingin memperluas wawasan di era digital!
-        </p>
 
         <div className="card-grid">
           {dataArtikel.map((item, index) => (
             <div className="card" key={index}>
               <img src={item.gambar} alt={item.judul} />
+
               <div className="card-body">
                 <h3>{item.judul}</h3>
                 <p>{item.deskripsi}</p>
-                <a href={item.link} className="btn-outline">Baca Selengkapnya</a>
+
+                {/* LINK ROUTER */}
+                <Link to={item.link} className="btn-outline">
+                  Baca Selengkapnya
+                </Link>
+
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="footer">
         <p>© 2025 ThinkLyttleStars.</p>
       </footer>
@@ -154,3 +142,4 @@ const dataArtikel = [
     link: "/index_web"
   }
 ]
+
