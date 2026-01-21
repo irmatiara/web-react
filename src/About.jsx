@@ -22,7 +22,7 @@ export default function About() {
 
           <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
             <li><Link to="/">Beranda</Link></li>
-            <li><Link to="/#artikel">Artikel</Link></li>
+            <li><Link to="/artikel" className="active">Artikel</Link></li>
             <li><Link to="/about" className="active">About Us</Link></li>
             <li><Link to="/#kontak">Kontak</Link></li>
           </ul>

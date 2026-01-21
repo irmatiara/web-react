@@ -42,7 +42,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Apa Itu Artificial Intelligence?</h3>
               <p>Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi ini mengubah dunia.</p>
-              <Link to="/index_ai" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/MateriAi" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
