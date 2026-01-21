@@ -42,7 +42,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Apa Itu Artificial Intelligence?</h3>
               <p>Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi ini mengubah dunia.</p>
-              <Link to="/MateriAi" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/ai" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -50,7 +50,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Mengenal HTML</h3>
               <p>Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.</p>
-              <Link to="/index_html" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/html" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -58,7 +58,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Bagaimana Internet Bekerja?</h3>
               <p>Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!</p>
-              <Link to="/index_internet" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/internet" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -66,7 +66,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Mengenal Python lebih dalam</h3>
               <p>Mengapa Python menjadi pilihan favorit para pengembang dalam teknologi modern di seluruh dunia.</p>
-              <Link to="/index_python" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -74,7 +74,7 @@ function Artikel() {
             <div className="card-body">
               <h3>JavaScript itu apa sih?</h3>
               <p>Kuasai bahasa pemrograman web paling populer untuk membuat halaman kamu menjadi interaktif.</p>
-              <Link to="/index_javascript" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -82,7 +82,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Langkah Awal Belajar Data Science</h3>
               <p>Mengenali keterampilan dasar data science sebelum memulai.</p>
-              <Link to="/index_data" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -90,7 +90,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Keamanan di Dunia Internet</h3>
               <p>Menjaga keamanan bukan hanya tanggung jawab perusahaan, tapi juga user.</p>
-              <Link to="/index_keamanan" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -98,7 +98,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Algoritma Dalam Kehidupan Sehari-hari</h3>
               <p>Setiap kegiatan bisa dilakukan dengan algoritma.</p>
-              <Link to="/index_algoritma" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -106,7 +106,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Desain Grafis</h3>
               <p>Seni komunikasi visual yang menarik.</p>
-              <Link to="/index_desaingrafis" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -114,7 +114,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Komponen Utama IoT</h3>
               <p>Bagian penting IoT agar perangkat bisa bertukar data.</p>
-              <Link to="/index_IOT" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -122,7 +122,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Mengenal UI/UX</h3>
               <p>Menciptakan tampilan menarik & nyaman.</p>
-              <Link to="/index_uiux" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -130,7 +130,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Jenis Bahasa Pemrograman</h3>
               <p>Pelajari berbagai bahasa pemrograman.</p>
-              <Link to="/index_bprogram" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
           <div className="card">
@@ -138,7 +138,7 @@ function Artikel() {
             <div className="card-body">
               <h3>Perjalanan Website</h3>
               <p>Sejarah lahirnya web.</p>
-              <Link to="/index_web" className="btn-outline">Baca Selengkapnya</Link>
+              <Link to="/notfound" className="btn-outline">Baca Selengkapnya</Link>
             </div>
           </div>
         </div>

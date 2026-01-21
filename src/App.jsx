@@ -18,6 +18,7 @@ function App() {
 			<Route path="/algo" element={<NotFound />} />
 			<Route path="/artikel" element={<Artikel />} />
 			<Route path="/about" element={<About/>} />
+			<Route path="/notfound" element={<NotFound />} />
 		</Routes>
 	);
 }
