@@ -1,21 +1,15 @@
 import { Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function MateriAi() {
 	return (
 		<>
-			<nav className="navbar">
-				<div className="container">
-					<Link to="/">
-						<img className="logo" src="/assets/logo.svg" alt="" srcSet="" />
-					</Link>
-				</div>
-			</nav>
+			<Navbar />
 			<section className="hero">
 				<div className="hero-content">
 					<h1>Apa Itu Artificial Intelligence?</h1>
-					<p>
-						Mengupas sejarah, perkembangan, dan aplikasi AI dalam kehidupan modern.
-					</p>
+					<p>Mengupas sejarah, perkembangan, dan aplikasi AI dalam kehidupan modern.</p>
 				</div>
 			</section>
 			<section className="materi-container">
@@ -69,61 +63,23 @@ export default function MateriAi() {
 				</div>
 				<h2>Timeline Sejarah AI</h2>
 				<ul className="timeline">
-					<li>
-						<b>1950-an:</b> Alan Turing memperkenalkan pertanyaan "Can machines
-						think?"
-					</li>
-					<li>
-						<b>1960-an:</b> LISP dan Prolog mulai digunakan untuk penelitian AI.
-					</li>
-					<li>
-						<b>1970-1980:</b> AI Winter, fokus pada sistem pakar.
-					</li>
-					<li>
-						<b>1997:</b> IBM Deep Blue kalahkan Garry Kasparov.
-					</li>
-					<li>
-						<b>2000-an:</b> Machine Learning dan Deep Learning mulai populer.
-					</li>
-					<li>
-						<b>2010-an:</b> AI digunakan dalam asisten virtual, kendaraan otonom,
-						analisis data besar.
-					</li>
-					<li>
-						<b>2020-an:</b> AI semakin cerdas, adaptif, dan menjadi bagian dari
-						kehidupan sehari-hari.
-					</li>
+					<li><b>1950-an:</b> Alan Turing memperkenalkan pertanyaan "Can machines think?"</li>
+					<li><b>1960-an:</b> LISP dan Prolog mulai digunakan untuk penelitian AI.</li>
+					<li><b>1970-1980:</b> AI Winter, fokus pada sistem pakar.</li>
+					<li><b>1997:</b> IBM Deep Blue kalahkan Garry Kasparov.</li>
+					<li><b>2000-an:</b> Machine Learning dan Deep Learning mulai populer.</li>
+					<li><b>2010-an:</b> AI digunakan dalam asisten virtual, kendaraan otonom, analisis data besar.</li>
+					<li><b>2020-an:</b> AI semakin cerdas, adaptif, dan menjadi bagian dari kehidupan sehari-hari.</li>
 				</ul>
 				<h2>Aplikasi AI di Kehidupan Sehari-hari</h2>
-				<p>
-					AI kini tidak lagi terbatas pada laboratorium. Penggunaan AI telah
-					merambah ke banyak aspek kehidupan manusia:
-				</p>
+				<p>AI kini tidak lagi terbatas pada laboratorium. Penggunaan AI telah merambah ke banyak aspek kehidupan manusia:</p>
 				<ul>
-					<li>
-						Asisten digital: Siri, Google Assistant, Alexa, membantu aktivitas
-						sehari-hari.
-					</li>
-					<li>
-						Rekomendasi konten: Netflix, YouTube, Spotify menyarankan film, video,
-						dan musik sesuai preferensi.
-					</li>
-					<li>
-						Kendaraan otonom dan sistem navigasi pintar: mobil self-driving dan GPS
-						lebih efisien.
-					</li>
-					<li>
-						Pendeteksi penipuan dalam transaksi perbankan: AI mengenali pola
-						transaksi mencurigakan.
-					</li>
-					<li>
-						Robotik dan otomatisasi industri: meningkatkan efisiensi dan keamanan di
-						pabrik.
-					</li>
-					<li>
-						Penerjemah bahasa otomatis: Google Translate memudahkan komunikasi
-						lintas bahasa.
-					</li>
+					<li>Asisten digital: Siri, Google Assistant, Alexa, membantu aktivitas sehari-hari.</li>
+					<li>Rekomendasi konten: Netflix, YouTube, Spotify menyarankan film, video, dan musik sesuai preferensi.</li>
+					<li>Kendaraan otonom dan sistem navigasi pintar: mobil self-driving dan GPS lebih efisien.</li>
+					<li>Pendeteksi penipuan dalam transaksi perbankan: AI mengenali pola transaksi mencurigakan.</li>
+					<li>Robotik dan otomatisasi industri: meningkatkan efisiensi dan keamanan dipabrik.</li>
+					<li>Penerjemah bahasa otomatis: Google Translate memudahkan komunikasi lintas bahasa.</li>
 				</ul>
 				<h2>Tantangan dan Etika AI</h2>
 				<p>
@@ -142,9 +98,7 @@ export default function MateriAi() {
 				</p>
 				<Link to="/" className="btnKembali">Kembali ke Beranda</Link>
 			</section>
-			<footer className="footer">
-				<p>© 2025 ThinkLyttleStars. Semua hak dilindungi.</p>
-			</footer>
+			<Footer />
 		</>
 	);
 }

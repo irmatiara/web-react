@@ -1,33 +1,10 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function About() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <>
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="container">
-          <img className="logo" src="assets/logo.svg" alt="ThinkLyttleStars" />
-
-          <div
-            className={`burger-menu ${menuOpen ? "toggle" : ""}`}
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
-
-          <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-            <li><Link to="/">Beranda</Link></li>
-            <li><Link to="/artikel">Artikel</Link></li>
-            <li><Link to="/about" className="active">About Us</Link></li>
-            <li><Link to="/#kontak">Kontak</Link></li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Tentang 1 */}
       <div id="tentang" className="light-bg">
@@ -137,10 +114,7 @@ export default function About() {
         </div>
         <img src="assets/4.png" alt="Ilustrasi" />
       </div>
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 ThinkLyttleStars.</p>
-      </footer>
+      <Footer />
     </>
   );
 }

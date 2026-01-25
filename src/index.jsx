@@ -1,5 +1,10 @@
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import ArtikelPopuler from './components/ArtikelPopuler'
+import Kontak from './components/Kontak'
+import Footer from './components/Footer'
 
 function Home() {
 	const location = useLocation()
@@ -20,92 +25,30 @@ function Home() {
 
 	return (
 		<>
-			<nav className="navbar">
-				<div className="container">
-					<img className="logo" src="/assets/logo.svg" alt="" />
-					<div className="burger-menu">
-						<div className="bar" />
-						<div className="bar" />
-						<div className="bar" />
-					</div>
-					<ul className="nav-links">
-						<li><Link to="/" className="active">Beranda</Link></li>
-						<li><Link to="/artikel">Artikel</Link></li>
-						<li><Link to="/about">About Us</Link></li>
-						<li><Link to="/#kontak">Kontak</Link></li>
-					</ul>
-				</div>
-			</nav>
-
-			<section className="hero">
-				<img src="/assets/1.png" alt="" />
-				<div className="hero-content">
-					<h1>Belajar Teknologi Jadi Mudah</h1>
-					<p>
-						ThinkLyttleStars adalah ruang belajar yang sederhana dan ramah, di mana setiap artikel membantu kamu memahami dunia digital dengan cara yang ringan.
-						Nggak perlu waktu lama, cukup luangkan beberapa menit untuk membaca dan kamu akan mendapat wawasan baru yang bermanfaat untuk keseharianmu.
-					</p>
-				</div>
-			</section>
-
-			<section id="artikel" className="section">
-				<h2 style={{ paddingBottom: 30 }}>Artikel Populer</h2>
-				<div className="card-grid">
-					<div className="card">
-						<img src="/assets/ai (2).jfif" alt="AI" />
-						<div className="card-body">
-							<h3>Apa Itu Artificial Intelligence?</h3>
-							<p>Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi ini mengubah dunia.</p>
-							<Link to="/ai" className="btn-outline">Baca Selengkapnya</Link>
-						</div>
-					</div>
-
-					<div className="card">
-						<img src="/assets/html.jfif" alt="Coding" />
-						<div className="card-body">
-							<h3>Mengenal HTML</h3>
-							<p>Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.</p>
-							<Link to="/html" className="btn-outline">Baca Selengkapnya</Link>
-						</div>
-					</div>
-
-					<div className="card">
-						<img src="/assets/internet.jfif" alt="Internet" />
-						<div className="card-body">
-							<h3>Bagaimana Internet Bekerja?</h3>
-							<p>Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!</p>
-							<Link to="/internet" className="btn-outline">Baca Selengkapnya</Link>
-						</div>
-					</div>
-					<Link to="/artikel" className="btn-outline" style={{ marginLeft: 'auto', display: 'block', width: 'fit-content' }}>Artikel Lainnya</Link>
-				</div>
-			</section>
-
-			<section id="kontak" className="section" style={{ backgroundColor: '#F5F5DC' }}>
-				<h2>Contact Us</h2>
-				<form name="contact-form" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 15 }}>
-					<div style={{ display: 'flex', justifyContent: 'space-between', width: 400 }}>
-						<label htmlFor="name">Nama Lengkap</label>
-						<input type="text" id="name" name="nama" style={{ width: 250 }} />
-					</div>
-
-					<div style={{ display: 'flex', justifyContent: 'space-between', width: 400 }}>
-						<label htmlFor="email">Email</label>
-						<input type="email" id="email" name="email" style={{ width: 250 }} />
-					</div>
-
-					<div style={{ display: 'flex', justifyContent: 'space-between', width: 400 }}>
-						<label htmlFor="pesan">Pesan</label>
-						<textarea id="pesan" name="pesan" rows={3} style={{ width: 250 }} />
-					</div>
-
-					<button type="submit" className="btn-primary">Kirim</button>
-				</form>
-			</section>
-
-			<footer className="footer">
-				<p>© 2025 ThinkLyttleStars.</p>
-			</footer>
+			<Navbar />
+			<Hero />
+			<ArtikelPopuler articles={[
+				{
+					image: '/assets/ai (2).jfif',
+					title: 'Apa Itu Artificial Intelligence?',
+					description: 'Kenali dasar-dasar kecerdasan buatan dan bagaimana teknologi ini mengubah dunia.',
+					link: '/ai'
+				},
+				{
+					image: '/assets/html.jfif',
+					title: 'Mengenal HTML',
+					description: 'Mulai langkah pertama dalam dunia pemrograman web dengan memahami struktur HTML.',
+					link: '/html'
+				},
+				{
+					image: '/assets/internet.jfif',
+					title: 'Bagaimana Internet Bekerja?',
+					description: 'Pelajari perjalanan data dari komputer kamu hingga sampai ke seluruh dunia!',
+					link: '/internet'
+				},
+			]} />
+			<Kontak />
+			<Footer />
 		</>
 	)
 }

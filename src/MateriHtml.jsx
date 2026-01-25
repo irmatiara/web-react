@@ -1,19 +1,11 @@
 import { Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function MateriHtml() {
   return (
     <>
-      <nav className="navbar">
-        <div className="container">
-          <Link to="/">
-            <img
-              className="logo"
-              src="assets/logo.svg"
-              alt="Logo ThinkLyttleStars"
-            />
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
       <section className="hero">
         <div className="hero-content">
@@ -117,9 +109,7 @@ export default function MateriHtml() {
         </Link>
       </section>
 
-      <footer className="footer">
-        <p>© 2025 ThinkLyttleStars. Semua hak dilindungi.</p>
-      </footer>
+      <Footer />
     </>
   );
 }

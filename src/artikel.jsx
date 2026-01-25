@@ -1,32 +1,11 @@
 import { Link } from "react-router-dom";
-import { useState } from "react"
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function Artikel() {
-  const [menuAktif, setMenuAktif] = useState(false)
-
-  function toggleMenu() {
-    setMenuAktif(!menuAktif)
-  }
-
   return (
     <>
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="container">
-          <img className="logo" src="assets/logo.svg" alt="logo" />
-          <div className="burger-menu" onClick={toggleMenu}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
-          <ul className={`nav-links ${menuAktif ? "active" : ""}`}>
-            <li><Link to="/">Beranda</Link></li>
-            <li><Link to="/artikel" className="active">Artikel</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-						<li><Link to="/#kontak">Kontak</Link></li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Section Artikel */}
       <section id="artikel" className="section">
@@ -143,9 +122,7 @@ function Artikel() {
           </div>
         </div>
       </section>
-      <footer className="footer">
-        <p>© 2025 ThinkLyttleStars.</p>
-      </footer>
+      <Footer />
     </>
   )
 }
