@@ -15,10 +15,10 @@ export default function About() {
             dan <i>little stars</i> (bintang-bintang kecil).
             Karena kami percaya bahwa setiap pemikiran kecil bisa tumbuh menjadi
             cahaya besar yang menerangi dunia.
-            Tempat di mana setiap bintang kecil belajar untuk bersinar lebih terang 🌟.
-            <br /><br />
-            Mari berjalan bersama kami. Temukan cahaya kecilmu. Belajarlah perlahan,
-            dan biarkan dirimu bersinar di langit pengetahuan bersama
+            Tempat di mana setiap bintang kecil belajar untuk bersinar lebih terang. Disini, setiap ide kecil dihargai, setiap langkah belajar dirayakan, 
+            dan setiap bintang seperti kamu dipandu untuk menemukan cahaya terbaik 🌟.
+            Mari berjalan bersama kami. Temukan cahaya kecilmu. Belajarlah perlahan, dengan hati yang terbuka,
+            dan biarkan dirimu bersinar di langit yang luas pengetahuan bersama kami di
             <b> ThinkLyttelStars </b> 🌙💫
           </p>
         </div>
@@ -45,25 +45,25 @@ export default function About() {
                         icon: "fa-house",
                         title: "Ruang Belajar Menenangkan",
                         desc:
-                          "Tempat di mana setiap bintang kecil bisa berhenti sejenak dan belajar.",
+                          "ThinkLyttelStars adalah tempat di mana setiap bintang kecil bisa berhenti sejenak, berpikir dan belajar.",
                       },
                       {
                         icon: "fa-laptop-code",
-                        title: "Edukasi Teknologi Menyenangkan",
+                        title: "Edukasi Teknologi Sederhana & Menyenangkan",
                         desc:
-                          "Belajar dunia digital dengan cara sederhana.",
+                          "Membantu siapapun memahami dunia digital dengan cara yang mudah dipahami.",
                       },
                       {
                         icon: "fa-lightbulb",
                         title: "Menghargai Potensi Unik",
                         desc:
-                          "Setiap ide dan proses belajar itu berarti.",
+                          "Setiap ide dan langkah belajar dihargai, menumbuhkan kreativitas, empati dan kepekaan",
                       },
                       {
                         icon: "fa-person-rays",
                         title: "Bersinar Bersama",
                         desc:
-                          "Belajar perlahan dan bertumbuh bersama.",
+                          "Mari belajar perlahan, temukan cahaya kecilmu, dan bersinar di langit pengetahuan bersama ThinkLyttelStars.",
                       },
                     ].map((item, i) => (
                       <tr key={i}>
