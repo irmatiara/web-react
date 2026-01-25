@@ -81,7 +81,7 @@ function Home() {
 				</div>
 			</section>
 
-			<section id="kontak" className="section">
+			<section id="kontak" className="section" style={{ backgroundColor: '#F5F5DC' }}>
 				<h2>Contact Us</h2>
 				<form name="contact-form" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 15 }}>
 					<div style={{ display: 'flex', justifyContent: 'space-between', width: 400 }}>
