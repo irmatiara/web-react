@@ -2,11 +2,11 @@ import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 
 function Navbar() {
-	const [menuOpen, setMenuOpen] = useState(false)
+	const [menuAktif, setMenuAktif] = useState(false)
 	const location = useLocation()
-	const isNotFound = location.pathname === '/notfound'
-	const detailPagePaths = ['/ai', '/html', '/internet', '/algo']
-	const isDetailPage = detailPagePaths.some(path =>
+	const notFound = location.pathname === '/notfound'
+	const halamanDetail = ['/ai', '/html', '/internet', '/algo']
+	const detail = halamanDetail.some(path =>
 		location.pathname.startsWith(path)
 	)
 
@@ -14,16 +14,16 @@ function Navbar() {
 		<nav className="navbar">
 			<div className="container">
 				<img className="logo" src="/assets/logo.svg" alt="" />
-				{!isDetailPage && (
+				{!detail && (
 					<>
-						<div className={`burger-menu ${menuOpen ? 'toggle' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+						<div className={`burger-menu ${menuAktif ? 'toggle' : ''}`} onClick={() => setMenuAktif(!menuAktif)}>
 							<div className="bar" />
 							<div className="bar" />
 							<div className="bar" />
 						</div>
 
-						<ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-							{isNotFound ? (
+						<ul className={`nav-links ${menuAktif ? 'active' : ''}`}>
+							{notFound ? (
 								<li><Link to="/artikel" className={location.pathname === '/artikel' ? 'active' : ''}>Artikel</Link></li>
 							) : (
 								<>

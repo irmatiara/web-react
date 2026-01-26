@@ -1,7 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
 import ArtikelPopuler from './components/ArtikelPopuler'
 import Kontak from './components/Kontak'
 import Footer from './components/Footer'
@@ -22,12 +21,23 @@ function Home() {
 		}
 	}, [location])
 
-
 	return (
 		<>
 			<Navbar />
-			<Hero />
-			<ArtikelPopuler articles={[
+			<section className="hero">
+				<img src="/assets/1.png" alt="" />
+				<div className="hero-content">
+					<h1>Belajar Teknologi Jadi Mudah</h1>
+					<p>
+						ThinkLyttleStars adalah ruang belajar yang sederhana dan ramah,
+						di mana setiap artikel membantu kamu memahami dunia digital
+						dengan cara yang ringan. Nggak perlu waktu lama, cukup luangkan
+						beberapa menit untuk membaca dan kamu akan mendapat wawasan
+						baru yang bermanfaat untuk keseharianmu.
+					</p>
+				</div>
+			</section>
+			<ArtikelPopuler artikel={[
 				{
 					image: '/assets/ai (2).jfif',
 					title: 'Apa Itu Artificial Intelligence?',

@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
 
-function ArtikelPopuler({ articles }) {
+function ArtikelPopuler({ artikel }) {
 	return (
 		<section id="artikel" className="section">
 			<h2 style={{ paddingBottom: 30 }}>Artikel Populer</h2>
 			<div className="card-grid">
-				{articles.map((article, index) => (
+				{artikel.map((art, index) => (
 					<div className="card" key={index}>
-						<img src={article.image} alt={article.title} />
+						<img src={art.image} alt={art.title} />
 						<div className="card-body">
-							<h3>{article.title}</h3>
-							<p>{article.description}</p>
-							<Link to={article.link} className="btn-outline">Baca Selengkapnya</Link>
+							<h3>{art.title}</h3>
+							<p>{art.description}</p>
+							<Link to={art.link} className="btn-outline">Baca Selengkapnya</Link>
 						</div>
 					</div>
 				))}

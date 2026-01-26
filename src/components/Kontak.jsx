@@ -15,7 +15,7 @@ function Kontak() {
 	};
 
 	const handleSubmit = (e) => {
-		e.preventDefault(); // biar ga reload
+		e.preventDefault();
 		alert("pesan anda sudah di kirim");
 
 		// reset form
