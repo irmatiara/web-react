@@ -105,11 +105,11 @@ export default function About() {
       <div id="tentang" className="light-bg">
         <div className="section-tentang">
           <p>
-            ThinkLyttelStars hadir sebagai ruang kecil yang menenangkan.
-            Platform edukasi teknologi yang sederhana, hangat, dan manusiawi.
-            <br /><br />
-            Kami percaya belajar bukan tekanan, tapi perjalanan lembut menuju
-            penemuan diri 💫
+            Di dunia yang berjalan begitu cepat, <i>ThinkLyttelStars</i> hadir sebagai ruang kecil yang menenangkan tempat dimana setiap bintang kecil bisa berhenti sejenak, berpikir, belajar, dan
+            menemukan cahayanya sendiri. <i>ThinkLyttelStars</i> adalah platform edukasi teknologi yang dibuat untuk membantu siapapun memahammi dunia digital dengan cara yang sederhana dan menyenangkan.
+            Kami percaya bahwa setiap orang memiliki mulai unik yang menunggu untuk ditemukan, dan belajar adalah cara terbaik untuk membuat cahaya itu bersinar lebih terang 💫. <i>ThinkLyttelStars</i> bukan sekedar
+            platform edukasi, tapi sebuah perjalanan lembut menuju penemuan diri. Kami menggabungkan pembelajaran dengan kepekaan, kreativitas, dann empati, agar setiap proses belajar terasa hangat bukan menekan,
+            tapi menumbuhkan. Karena kami tahu, ilmu yang tumbuh dari hati akan selalu bertahan lebih lama daripada sekedar hafalan.
           </p>
         </div>
         <img src="assets/4.png" alt="Ilustrasi" />
