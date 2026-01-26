@@ -8,8 +8,8 @@ function Artikel() {
       <Navbar />
 
       {/* Section Artikel */}
-      <section id="artikel" className="section">
-        <h2>Artikel Populer</h2>
+      <section id="artikel" className="py-16 px-4 text-center">
+        <h2 className="text-4xl mb-8 font-bold">Artikel Populer</h2>
         <p style={{ maxWidth: '800px', margin: '0 auto', marginBottom: '50px', lineHeight: '1.6' }}>
             Temukan berbagai artikel menarik seputar teknologi, pemrograman, dan perkembangan dunia digital. Mulai dari pengenalan Artificial Intelligence hingga panduan belajar bahasa pemrograman populer seperti Python, JavaScript, dan HTML. Cocok untuk kamu yang ingin memperluas wawasan di era digital!
         </p>

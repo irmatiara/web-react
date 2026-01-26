@@ -23,6 +23,7 @@ a:hover {
 }
 
 body {
+  @apply text-[#2E4365] leading-[1.6]; /* New styles */
   margin: 0;
   display: flex;
   place-items: center;

@@ -1,74 +1,14 @@
 @import "tailwindcss";
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-html,
-body {
-	width: 100%;
-	height: 100%;
-	overflow-x: hidden;
 }
 
 body {
 	color: #2E4365;
 	line-height: 1.6;
 	font-family: 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
-}
-
-#root {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-
-.navbar {
-	background: #2E4365;
-	position: sticky;
-	top: 0;
-	z-index: 10;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .container {
-	width: 90%;
-	margin: auto;
-	min-height: 60px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.logo {
-	height: 80px;
-	object-fit: contain;
-	margin-top: 5px;
-}
-
-.nav-links {
-	display: flex;
-	gap: 0.8rem;
-	list-style: none;
-}
-
-.nav-links a {
-	padding: 0.4rem 1rem;
-	border: 1px solid #F3D58D;
-	border-radius: 6px;
-	color: #F3D58D;
-	text-decoration: none;
-}
-
-.nav-links a:hover,
-.nav-links .active {
-	background: #F3D58D;
-	color: #2E4365;
 }
 
 .hero {
@@ -106,10 +46,7 @@ body {
 	color: #F3D58D;
 }
 
-.section {
-	padding: 4rem 1rem;
-	text-align: center;
-}
+
 
 #tentang,
 #tentang2 {
@@ -246,6 +183,25 @@ body {
 }
 
 .materi-container p {
+	text-align: justify;
+	margin-bottom: 1.2rem;
+}
+
+@media (max-width: 900px) {
+	.card {
+		flex: 1 1 calc(50% - 1.5rem);
+	}
+}
+
+@media (max-width: 600px) {
+	.card {
+		flex: 1 1 100%;
+	}
+
+	.materi-container {
+		padding: 1rem;
+	}
+}teri-container p {
 	text-align: justify;
 	margin-bottom: 1.2rem;
 }

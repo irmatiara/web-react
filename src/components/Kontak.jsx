@@ -27,20 +27,20 @@ function Kontak() {
 	};
 
 	return (
-		<section id="kontak" className="section" style={{ backgroundColor: '#F5F5DC' }}>
-			<h2>Contact Us</h2>
-			<form name="contact-form" onSubmit={handleSubmit} style={{display: 'flex',flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 15}}>
-				<div style={{ display: 'flex', justifyContent: 'space-between', width: 400 }}>
+		<section id="kontak" className="bg-[#F5F5DC] py-16 px-4 text-center">
+			<h2 className="mb-10 text-xl">Contact Us</h2>
+			<form name="contact-form" onSubmit={handleSubmit} className="flex flex-col items-center justify-center gap-4">
+				<div className="flex justify-between w-[400px]">
 					<label htmlFor="name">Nama Lengkap</label>
-					<input type="text" id="name" name="nama" value={form.nama} onChange={handleChange} style={{ width: 250 }}/>
+					<input type="text" id="name" name="nama" value={form.nama} onChange={handleChange} className="w-[250px] border border-gray-300 rounded p-2 text-black"/>
 				</div>
-				<div style={{ display: 'flex', justifyContent: 'space-between', width: 400 }}>
+				<div className="flex justify-between w-[400px]">
 					<label htmlFor="email">Email</label>
-					<input type="email" id="email" name="email" value={form.email} onChange={handleChange} style={{ width: 250 }}/>
+					<input type="email" id="email" name="email" value={form.email} onChange={handleChange} className="w-[250px] border border-gray-300 rounded p-2 text-black"/>
 				</div>
-				<div style={{ display: 'flex', justifyContent: 'space-between', width: 400 }}>
+				<div className="flex justify-between w-[400px]">
 					<label htmlFor="pesan">Pesan</label>
-					<textarea id="pesan" name="pesan" rows={3} value={form.pesan} onChange={handleChange} style={{ width: 250 }}/>
+					<textarea id="pesan" name="pesan" rows={3} value={form.pesan} onChange={handleChange} className="w-[250px] border border-gray-300 rounded p-2 text-black"/>
 				</div>
 				<button type="submit" className="btn-primary">Kirim</button>
 			</form>
