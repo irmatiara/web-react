@@ -21,16 +21,7 @@ body {
 	text-align: left;
 }
 
-.hero h1 {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-bottom: 1rem;
-}
 
-.hero p {
-	font-size: 1.1rem;
-	margin-bottom: 1.5rem;
-}
 
 .btn-primary {
 	background: #F3D58D;
@@ -146,47 +137,6 @@ body {
 	color: #F3D58D;
 }
 
-.footer {
-	background: #0f0f0f;
-	color: #f0f0f0;
-	text-align: center;
-	padding: 1rem 0;
-}
-
-.btnKembali {
-	display: inline-block;
-	background-color: #F3D58D;
-	color: #2E4365;
-	padding: 0.7rem 1.5rem;
-	border-radius: 8px;
-	text-decoration: none;
-	transition: 0.3s;
-}
-
-.btnKembali:hover {
-	background-color: #2E4365;
-	color: #F3D58D;
-}
-
-.materi-container {
-	max-width: 900px;
-	margin: 2rem auto;
-	padding: 2rem;
-	background-color: #f8f9fa;
-	border-radius: 12px;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.materi-container h2 {
-	margin-bottom: 1rem;
-	border-bottom: 2px solid #F3D58D;
-}
-
-.materi-container p {
-	text-align: justify;
-	margin-bottom: 1.2rem;
-}
-
 @media (max-width: 900px) {
 	.card {
 		flex: 1 1 calc(50% - 1.5rem);
@@ -196,28 +146,5 @@ body {
 @media (max-width: 600px) {
 	.card {
 		flex: 1 1 100%;
-	}
-
-	.materi-container {
-		padding: 1rem;
-	}
-}teri-container p {
-	text-align: justify;
-	margin-bottom: 1.2rem;
-}
-
-@media (max-width: 900px) {
-	.card {
-		flex: 1 1 calc(50% - 1.5rem);
-	}
-}
-
-@media (max-width: 600px) {
-	.card {
-		flex: 1 1 100%;
-	}
-
-	.materi-container {
-		padding: 1rem;
 	}
 }

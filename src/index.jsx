@@ -24,11 +24,11 @@ function Home() {
 	return (
 		<>
 			<Navbar />
-			<section className="hero">
-				<img src="/assets/1.png" alt="" />
-				<div className="hero-content">
-					<h1>Belajar Teknologi Jadi Mudah</h1>
-					<p>
+			<section className="bg-[#f5ecde] flex flex-col md:flex-row items-center justify-center p-8 md:p-40 text-center md:text-left min-h-[50vh] md:h-[60vh]">
+				<img src="/assets/1.png" alt="" className="w-full md:w-1/2 max-w-[400px] mb-8 md:mb-0 md:me-8" />
+				<div className="w-full md:w-1/2 max-w-[600px]">
+					<h1 className="text-[2.5rem] font-bold mb-4">Belajar Teknologi Jadi Mudah</h1>
+					<p className="text-[1.1rem] mb-6">
 						ThinkLyttleStars adalah ruang belajar yang sederhana dan ramah,
 						di mana setiap artikel membantu kamu memahami dunia digital
 						dengan cara yang ringan. Nggak perlu waktu lama, cukup luangkan
