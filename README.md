@@ -5,11 +5,11 @@
 
 # Nama Kelompok: BlackPink
 
-# Anggota:
-1. Ulya Salsabila (241110485)
-2. Meyggy (241112699)
-3. Florentina (241110752)
-4. Irma Tiara (241112440)
+# Anggota
+1. Meyggy (241112699) - Leader
+2. Irma Tiara (241112440) - Petugas Migrasi
+3. Ulya Salsabila (241110485)
+4. Florentina (241110752)
 
 # Klaim:
 1. Penggunaan Props (20 Point) - Props digunakan untuk mengirim data artikel dari parent component (index.jsx) ke child component (ArtikelPopuler) agar artikel dapat ditampilkan secara dinamis dan kode tetap terstruktur.
