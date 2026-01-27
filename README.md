@@ -1,40 +1,14 @@
-# Prasyarat (Wajib Dijalankan)
+<p align="center">
+  <img src="public/logo.svg" width="120" />
+</p>
+<h1 align="center">ThinkLyttelStars</h1>
 
-sebelum menjalankan project ini, pastikan **Node.js** sudah terinstall di laptop.
-cara ceknya, buka terminal dan ketik:
-```bash
-node -v
-```
-jika muncul angka/versi maka sudah terinstall, jika belum silahkan instal terlebih dahulu melalui link dibawah ini
-[nodejs.org](https://nodejs.org/)
+# Nama Kelompok: Blackpink
 
-1. clone repo ini, buka terminal dan jalankan code ini
-   ```bash
-    git clone https://github.com/irmatiara/web-react.git
-   ```
-2. setelah itu masuk ke directory project
-    ```bash
-    cd web-react
-    ```
-3. **WAJIB** install dependencies (pada repo ini node_modules tidak ada dikarenakan ukuran file terlalu besar)
-   ```bash
-   npm install
-   ```
-4. jalankan server
-   ```bash
-   npm run dev
-   ```
-   lalu buka project melalui link hasil dari npm run dev
+# Anggota:
+1. Ulya Salsabila (241110485)
+2. Meyggy (241112699)
+3. Florentina (241110752)
+4. Irma Tiara (241112440)
 
-
-# Struktur Folder
-src/: Tempat kita ngoding (App.jsx, App.css, Components).
-
-public/assets/: Tempat menyimpan gambar (Logo, Foto artikel, dll).
-
-index.html: File utama HTML (jangan diubah-ubah isinya kecuali nambah link font/icon).
-
-# Note
-*didalam project ini masih menampilkan 1 halaman saja yaitu halaman utama, silahkan buat untuk halaman lainnya.*
-
-Jika layar blank, coba cek Terminal atau Console di browser (Klik Kanan > Inspect > Console), disitu bakal di kasih tau errornya ada dimana, dan kenapa.
+# Klaim:
